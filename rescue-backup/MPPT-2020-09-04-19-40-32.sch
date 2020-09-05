@@ -1,5 +1,42 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:utsvt-power-regulators
+LIBS:utsvt-microcontrollers
+LIBS:utsvt-connectors
+LIBS:utsvt-chips
+LIBS:MPPT-cache
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -17,14 +54,14 @@ Text Notes 2800 800  0    120  ~ 24
 DC/DC Converter
 Text Notes 1100 4700 0    120  ~ 24
 Current Sensors
-Text Notes 1450 2900 0    120  ~ 24
+Text Notes 1350 2950 0    120  ~ 24
 Voltage Sensors
 Text Notes 8150 800  0    120  ~ 24
 Power Regulation
 Text Notes 8200 4700 0    120  ~ 24
 Nucleo Connections
 $Comp
-L MPPT-rescue:L_Core_Ferrite L1
+L L_Core_Ferrite L1
 U 1 1 5BB283A5
 P 3350 1200
 F 0 "L1" V 3300 1200 50  0000 C CNN
@@ -35,7 +72,7 @@ F 3 "" H 3350 1200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:Q_NMOS_GDS Q1
+L Q_NMOS_GDS Q1
 U 1 1 5BB28407
 P 3500 1850
 F 0 "Q1" H 3550 2000 50  0000 R CNN
@@ -46,7 +83,7 @@ F 3 "" H 3500 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Q_NMOS_GDS Q2
+L Q_NMOS_GDS Q2
 U 1 1 5BB28472
 P 3900 1550
 F 0 "Q2" H 3950 1700 50  0000 R CNN
@@ -59,7 +96,7 @@ $EndComp
 Text Label 3100 1550 2    60   ~ 12
 Drive_PWM
 $Comp
-L MPPT-rescue:R R2
+L R R2
 U 1 1 5BB284C6
 P 3200 2100
 F 0 "R2" V 3280 2100 50  0000 C CNN
@@ -70,7 +107,7 @@ F 3 "" H 3200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CP1 C1
+L CP1 C1
 U 1 1 5BB285EF
 P 2450 1700
 F 0 "C1" H 2475 1800 50  0000 L CNN
@@ -81,7 +118,7 @@ F 3 "" H 2450 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:SolarArrayConnector J1
+L SolarArrayConnector J1
 U 1 1 5BB28712
 P 850 1300
 F 0 "J1" H 850 1100 50  0000 C CNN
@@ -96,7 +133,7 @@ Array\nCurrent\nSensor
 Text Notes 1900 1900 0    60   Italic 0
 Array\nVoltage\nSensor
 $Comp
-L MPPT-rescue:D_Zener_ALT D4
+L D_Zener_ALT D4
 U 1 1 5BB284FA
 P 3000 2100
 F 0 "D4" H 3000 2200 50  0000 C CNN
@@ -107,7 +144,7 @@ F 3 "" H 3000 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:R R1
+L R R1
 U 1 1 5BB2959B
 P 4450 1600
 F 0 "R1" V 4530 1600 50  0000 C CNN
@@ -120,7 +157,7 @@ $EndComp
 Text Notes 5050 1950 1    60   Italic 0
 Snubber
 $Comp
-L MPPT-rescue:D_Schottky D3
+L D_Schottky D3
 U 1 1 5BB297A0
 P 5050 1200
 F 0 "D3" H 5050 1300 50  0000 C CNN
@@ -131,7 +168,7 @@ F 3 "" H 5050 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:D_Schottky D2
+L D_Schottky D2
 U 1 1 5BB297FE
 P 5050 900
 F 0 "D2" H 5050 1000 50  0000 C CNN
@@ -142,7 +179,7 @@ F 3 "" H 5050 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:CP1 C2
+L CP1 C2
 U 1 1 5BB29C25
 P 5300 1700
 F 0 "C2" H 5325 1800 50  0000 L CNN
@@ -155,7 +192,7 @@ $EndComp
 Text Notes 6050 2500 0    60   Italic 0
 Battery\nCurrent\nSensor
 $Comp
-L MPPT-rescue:BatteryConnector J2
+L BatteryConnector J2
 U 1 1 5BB2AA41
 P 7150 1300
 F 0 "J2" H 7150 1100 50  0000 C CNN
@@ -168,121 +205,121 @@ $EndComp
 Text Notes 5700 1900 0    60   Italic 0
 Battery\nVoltage\nSensor
 $Comp
-L MPPT-rescue:R R3
+L R R3
 U 1 1 5BB2BAFB
-P -400 3300
-F 0 "R3" V -320 3300 50  0000 C CNN
-F 1 "100k" V -400 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V -470 3300 50  0001 C CNN
-F 3 "" H -400 3300 50  0001 C CNN
-	1    -400 3300
+P 800 3350
+F 0 "R3" V 880 3350 50  0000 C CNN
+F 1 "100k" V 800 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 730 3350 50  0001 C CNN
+F 3 "" H 800 3350 50  0001 C CNN
+	1    800  3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R5
+L R R5
 U 1 1 5BB2BB53
-P -400 3900
-F 0 "R5" V -320 3900 50  0000 C CNN
-F 1 "2k" V -400 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V -470 3900 50  0001 C CNN
-F 3 "" H -400 3900 50  0001 C CNN
-	1    -400 3900
+P 800 3800
+F 0 "R5" V 880 3800 50  0000 C CNN
+F 1 "2k" V 800 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 730 3800 50  0001 C CNN
+F 3 "" H 800 3800 50  0001 C CNN
+	1    800  3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:D_ALT D6
+L D_ALT D6
 U 1 1 5BB2BC26
-P 1350 3900
-F 0 "D6" H 1350 4000 50  0000 C CNN
-F 1 "Diode" H 1350 3800 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 1350 3900 50  0001 C CNN
-F 3 "" H 1350 3900 50  0001 C CNN
-	1    1350 3900
+P 1850 3800
+F 0 "D6" H 1850 3900 50  0000 C CNN
+F 1 "Diode" H 1850 3700 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 1850 3800 50  0001 C CNN
+F 3 "" H 1850 3800 50  0001 C CNN
+	1    1850 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:D_Zener_ALT D5
+L D_Zener_ALT D5
 U 1 1 5BB2BC8A
-P 1050 3900
-F 0 "D5" H 1050 4000 50  0000 C CNN
-F 1 "4V Zener" H 1050 3800 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123F" H 1050 3900 50  0001 C CNN
-F 3 "" H 1050 3900 50  0001 C CNN
-	1    1050 3900
+P 1550 3800
+F 0 "D5" H 1550 3900 50  0000 C CNN
+F 1 "4V Zener" H 1550 3700 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 1550 3800 50  0001 C CNN
+F 3 "" H 1550 3800 50  0001 C CNN
+	1    1550 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR01
+L GNDPWR #PWR01
 U 1 1 5BB2BED0
-P -400 4250
-F 0 "#PWR01" H -400 4050 50  0001 C CNN
-F 1 "GNDPWR" H -400 4120 50  0000 C CNN
-F 2 "" H -400 4200 50  0001 C CNN
-F 3 "" H -400 4200 50  0001 C CNN
-	1    -400 4250
+P 800 4150
+F 0 "#PWR01" H 800 3950 50  0001 C CNN
+F 1 "GNDPWR" H 800 4020 50  0000 C CNN
+F 2 "" H 800 4100 50  0001 C CNN
+F 3 "" H 800 4100 50  0001 C CNN
+	1    800  4150
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R4
+L R R4
 U 1 1 5BB2C1F1
-P 1700 3300
-F 0 "R4" V 1780 3300 50  0000 C CNN
-F 1 "100k" V 1700 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1630 3300 50  0001 C CNN
-F 3 "" H 1700 3300 50  0001 C CNN
-	1    1700 3300
+P 2200 3350
+F 0 "R4" V 2280 3350 50  0000 C CNN
+F 1 "100k" V 2200 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2130 3350 50  0001 C CNN
+F 3 "" H 2200 3350 50  0001 C CNN
+	1    2200 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R6
+L R R6
 U 1 1 5BB2C1F7
-P 1700 3900
-F 0 "R6" V 1780 3900 50  0000 C CNN
-F 1 "2k" V 1700 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1630 3900 50  0001 C CNN
-F 3 "" H 1700 3900 50  0001 C CNN
-	1    1700 3900
+P 2200 3800
+F 0 "R6" V 2280 3800 50  0000 C CNN
+F 1 "2k" V 2200 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2130 3800 50  0001 C CNN
+F 3 "" H 2200 3800 50  0001 C CNN
+	1    2200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:D_ALT D8
+L D_ALT D8
 U 1 1 5BB2C1FD
-P 3400 3900
-F 0 "D8" H 3400 4000 50  0000 C CNN
-F 1 "Diode" H 3400 3800 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 3400 3900 50  0001 C CNN
-F 3 "" H 3400 3900 50  0001 C CNN
-	1    3400 3900
+P 3300 3800
+F 0 "D8" H 3300 3900 50  0000 C CNN
+F 1 "Diode" H 3300 3700 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 3300 3800 50  0001 C CNN
+F 3 "" H 3300 3800 50  0001 C CNN
+	1    3300 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:D_Zener_ALT D7
+L D_Zener_ALT D7
 U 1 1 5BB2C203
-P 3100 3900
-F 0 "D7" H 3100 4000 50  0000 C CNN
-F 1 "4V Zener" H 3100 3800 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123F" H 3100 3900 50  0001 C CNN
-F 3 "" H 3100 3900 50  0001 C CNN
-	1    3100 3900
+P 3000 3800
+F 0 "D7" H 3000 3900 50  0000 C CNN
+F 1 "4V Zener" H 3000 3700 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 3000 3800 50  0001 C CNN
+F 3 "" H 3000 3800 50  0001 C CNN
+	1    3000 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR02
+L GNDPWR #PWR02
 U 1 1 5BB2C218
-P 1700 4250
-F 0 "#PWR02" H 1700 4050 50  0001 C CNN
-F 1 "GNDPWR" H 1700 4120 50  0000 C CNN
-F 2 "" H 1700 4200 50  0001 C CNN
-F 3 "" H 1700 4200 50  0001 C CNN
-	1    1700 4250
+P 2200 4150
+F 0 "#PWR02" H 2200 3950 50  0001 C CNN
+F 1 "GNDPWR" H 2200 4020 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "" H 2200 4100 50  0001 C CNN
+	1    2200 4150
 	1    0    0    -1  
 $EndComp
-Text Label 1050 3100 2    60   ~ 12
+Text Label 1550 3300 2    60   ~ 12
 Array_Voltage
-Text Label 3100 3100 2    60   ~ 12
+Text Label 3000 3300 2    60   ~ 12
 Battery_Voltage
 $Comp
-L MPPT-rescue:CarPowerConnector J3
+L CarPowerConnector J3
 U 1 1 5BB2D117
 P 7750 1250
 F 0 "J3" H 7750 1450 50  0000 C CNN
@@ -293,7 +330,7 @@ F 3 "" H 7750 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDREF #PWR03
+L GNDREF #PWR03
 U 1 1 5BB2D2AA
 P 8050 1450
 F 0 "#PWR03" H 8050 1200 50  0001 C CNN
@@ -304,7 +341,7 @@ F 3 "" H 8050 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR04
+L GNDPWR #PWR04
 U 1 1 5BB2E517
 P 3800 2400
 F 0 "#PWR04" H 3800 2200 50  0001 C CNN
@@ -315,7 +352,7 @@ F 3 "" H 3800 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:D_Schottky D1
+L D_Schottky D1
 U 1 1 5BB2EB96
 P 4750 1600
 F 0 "D1" H 4750 1700 50  0000 C CNN
@@ -326,7 +363,7 @@ F 3 "" H 4750 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:CP1 C3
+L CP1 C3
 U 1 1 5BB295C8
 P 4600 2000
 F 0 "C3" H 4625 2100 50  0000 L CNN
@@ -337,7 +374,7 @@ F 3 "" H 4600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Fuse F1
+L Fuse F1
 U 1 1 5BB2FF01
 P 6550 1200
 F 0 "F1" V 6630 1200 50  0000 C CNN
@@ -348,7 +385,7 @@ F 3 "" H 6550 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:+12V #PWR05
+L +12V #PWR05
 U 1 1 5BBBE0EE
 P 8050 1050
 F 0 "#PWR05" H 8050 900 50  0001 C CNN
@@ -361,7 +398,7 @@ $EndComp
 Text Notes 7550 2600 0    60   ~ 0
 Isolated Power Regions:\n* High Power/Nucleo\n   - +/-Arr\n   - +/-Batt\n   - +9A, +5V, +3.3V\n   - GNDPWR\n* Low Car Power\n   - +12V\n   - GNDREF
 $Comp
-L MPPT-rescue:GNDPWR #PWR06
+L GNDPWR #PWR06
 U 1 1 5BBBF0C7
 P 9900 1400
 F 0 "#PWR06" H 9900 1200 50  0001 C CNN
@@ -374,7 +411,7 @@ $EndComp
 Text Notes 10350 1500 1    60   ~ 0
 High Power\nControl
 $Comp
-L MPPT-rescue:UCC37321 U3
+L UCC37321 U3
 U 1 1 5BBC0485
 P 9300 5900
 F 0 "U3" H 9300 5650 60  0000 C CNN
@@ -385,7 +422,7 @@ F 3 "" H 9300 5900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R7
+L R R7
 U 1 1 5BBC08B0
 P 10250 5700
 F 0 "R7" V 10330 5700 50  0000 C CNN
@@ -398,7 +435,7 @@ $EndComp
 Text Label 10250 5400 2    60   ~ 12
 Drive_PWM
 $Comp
-L MPPT-rescue:GNDPWR #PWR07
+L GNDPWR #PWR07
 U 1 1 5BBC0FAD
 P 9850 6250
 F 0 "#PWR07" H 9850 6050 50  0001 C CNN
@@ -409,7 +446,7 @@ F 3 "" H 9850 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR08
+L GNDPWR #PWR08
 U 1 1 5BBC165F
 P 8750 6250
 F 0 "#PWR08" H 8750 6050 50  0001 C CNN
@@ -428,7 +465,7 @@ Text Label 6450 2350 0    60   ~ 12
 Text Notes 6000 2450 2    60   ~ 12
 GNDPWR
 $Comp
-L MPPT-rescue:INA21x U4
+L INA21x U4
 U 1 1 5BBD5537
 P 1400 5550
 F 0 "U4" H 1550 5400 60  0000 L CNN
@@ -439,7 +476,7 @@ F 3 "" H 1400 5550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR09
+L GNDPWR #PWR09
 U 1 1 5BBD5959
 P 1400 6050
 F 0 "#PWR09" H 1400 5850 50  0001 C CNN
@@ -450,7 +487,7 @@ F 3 "" H 1400 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R8
+L R_Small R8
 U 1 1 5BBD5B22
 P 800 5550
 F 0 "R8" H 830 5570 50  0000 L CNN
@@ -461,7 +498,7 @@ F 3 "" H 800 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR010
+L GNDPWR #PWR010
 U 1 1 5BBD5CC8
 P 800 5300
 F 0 "#PWR010" H 800 5100 50  0001 C CNN
@@ -472,7 +509,7 @@ F 3 "" H 800 5250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C17
+L C_Small C17
 U 1 1 5BBD6119
 P 1700 5150
 F 0 "C17" H 1710 5220 50  0000 L CNN
@@ -489,7 +526,7 @@ Array_Current
 Text Notes 650  5050 0    40   ~ 0
 This looks weird,\nbut it is correct.\nCurrent flows\ninto array's -.
 $Comp
-L MPPT-rescue:INA21x U6
+L INA21x U6
 U 1 1 5BBD7DF1
 P 1400 7050
 F 0 "U6" H 1550 6900 60  0000 L CNN
@@ -500,7 +537,7 @@ F 3 "" H 1400 7050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR011
+L GNDPWR #PWR011
 U 1 1 5BBD7DFF
 P 1400 7550
 F 0 "#PWR011" H 1400 7350 50  0001 C CNN
@@ -511,7 +548,7 @@ F 3 "" H 1400 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R11
+L R_Small R11
 U 1 1 5BBD7E07
 P 800 7050
 F 0 "R11" H 830 7070 50  0000 L CNN
@@ -522,7 +559,7 @@ F 3 "" H 800 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C18
+L C_Small C18
 U 1 1 5BBD7E19
 P 1700 6650
 F 0 "C18" H 1710 6720 50  0000 L CNN
@@ -537,7 +574,7 @@ Text Label 900  6750 0    60   ~ 12
 Text Label 2750 6950 1    60   ~ 12
 Battery_Current
 $Comp
-L MPPT-rescue:GNDPWR #PWR012
+L GNDPWR #PWR012
 U 1 1 5BBD81EA
 P 800 7300
 F 0 "#PWR012" H 800 7100 50  0001 C CNN
@@ -557,20 +594,20 @@ Text Label 7400 5450 0    60   ~ 12
 Array_Voltage
 Text Notes 650  6550 0    40   ~ 0
 This looks weird,\nbut it is correct.\nCurrent flows out\nof battery's -.
-Text Notes 3000 2950 0    60   ~ 0
+Text Notes 2900 3000 0    60   ~ 0
 Basic voltage\ndividers
 Text Notes 1300 4800 0    60   ~ 0
 Low-side current sense
 Text Label 2050 1200 2    60   ~ 12
 +Arr
-Text Label -300 3100 0    60   ~ 12
+Text Label 900  3150 0    60   ~ 12
 +Arr
 Text Label 5850 1200 0    60   ~ 12
 +Batt
-Text Label 1800 3100 0    60   ~ 12
+Text Label 2300 3150 0    60   ~ 12
 +Batt
 $Comp
-L MPPT-rescue:GNDPWR #PWR013
+L GNDPWR #PWR013
 U 1 1 5BBE863D
 P 7300 6400
 F 0 "#PWR013" H 7300 6200 50  0001 C CNN
@@ -581,7 +618,7 @@ F 3 "" H 7300 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR014
+L GNDPWR #PWR014
 U 1 1 5BBE881B
 P 6100 6400
 F 0 "#PWR014" H 6100 6200 50  0001 C CNN
@@ -598,29 +635,29 @@ Reset
 Text Label 7550 5050 0    60   ~ 12
 Reset
 $Comp
-L MPPT-rescue:TEST TP7
+L TEST TP7
 U 1 1 5BBE9136
-P 1350 3350
-F 0 "TP7" H 1350 3650 50  0000 C BNN
-F 1 "Arr_V" H 1350 3600 50  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5005-5009_Compact" H 1350 3350 50  0001 C CNN
-F 3 "" H 1350 3350 50  0001 C CNN
-	1    1350 3350
+P 1850 3450
+F 0 "TP7" H 1850 3750 50  0000 C BNN
+F 1 "Arr_V" H 1850 3700 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point_Keystone_5005-5009_Compact" H 1850 3450 50  0001 C CNN
+F 3 "" H 1850 3450 50  0001 C CNN
+	1    1850 3450
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP8
+L TEST TP8
 U 1 1 5BBE93C9
-P 3400 3400
-F 0 "TP8" H 3400 3700 50  0000 C BNN
-F 1 "Batt_V" H 3400 3650 50  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5005-5009_Compact" H 3400 3400 50  0001 C CNN
-F 3 "" H 3400 3400 50  0001 C CNN
-	1    3400 3400
+P 3300 3450
+F 0 "TP8" H 3300 3750 50  0000 C BNN
+F 1 "Batt_V" H 3300 3700 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point_Keystone_5005-5009_Compact" H 3300 3450 50  0001 C CNN
+F 3 "" H 3300 3450 50  0001 C CNN
+	1    3300 3450
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP9
+L TEST TP9
 U 1 1 5BBE9727
 P 2450 5450
 F 0 "TP9" H 2450 5750 50  0000 C BNN
@@ -631,7 +668,7 @@ F 3 "" H 2450 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP10
+L TEST TP10
 U 1 1 5BBE99F1
 P 2450 6950
 F 0 "TP10" H 2450 7250 50  0000 C BNN
@@ -642,7 +679,7 @@ F 3 "" H 2450 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP11
+L TEST TP11
 U 1 1 5BBE9DAD
 P 7650 5950
 F 0 "TP11" H 7650 6250 50  0000 C BNN
@@ -653,7 +690,7 @@ F 3 "" H 7650 5950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP12
+L TEST TP12
 U 1 1 5BBEA0EE
 P 3100 1700
 F 0 "TP12" V 3200 1900 50  0000 L BNN
@@ -664,7 +701,7 @@ F 3 "" H 3100 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP5
+L TEST TP5
 U 1 1 5BBEB797
 P 9700 2050
 F 0 "TP5" H 9700 2350 50  0000 C BNN
@@ -675,7 +712,7 @@ F 3 "" H 9700 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP6
+L TEST TP6
 U 1 1 5BBEBBC8
 P 10050 2150
 F 0 "TP6" H 10050 2450 50  0000 C BNN
@@ -686,7 +723,7 @@ F 3 "" H 10050 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP3
+L TEST TP3
 U 1 1 5BBEC40C
 P 4600 1150
 F 0 "TP3" H 4600 1450 50  0000 C BNN
@@ -697,7 +734,7 @@ F 3 "" H 4600 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP4
+L TEST TP4
 U 1 1 5BBEC8C3
 P 4250 1850
 F 0 "TP4" H 4250 2150 50  0000 C BNN
@@ -708,7 +745,7 @@ F 3 "" H 4250 1850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP2
+L TEST TP2
 U 1 1 5BBECCC0
 P 1100 2350
 F 0 "TP2" H 1100 2650 50  0000 C BNN
@@ -719,7 +756,7 @@ F 3 "" H 1100 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP1
+L TEST TP1
 U 1 1 5BBED077
 P 2450 1150
 F 0 "TP1" H 2450 1450 50  0000 C BNN
@@ -744,7 +781,7 @@ NoConn ~ 7200 5950
 NoConn ~ 7200 5350
 NoConn ~ 7200 5250
 $Comp
-L MPPT-rescue:CANConnector J4
+L CANConnector J4
 U 1 1 5BBF08D9
 P 10200 3350
 F 0 "J4" H 10200 3100 60  0000 C CNN
@@ -755,7 +792,7 @@ F 3 "" H 10350 3650 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CANConnector J5
+L CANConnector J5
 U 1 1 5BBF0A39
 P 10200 3950
 F 0 "J5" H 10200 3700 60  0000 C CNN
@@ -766,7 +803,7 @@ F 3 "" H 10350 4250 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R9
+L R R9
 U 1 1 5BBF11F6
 P 9200 3700
 F 0 "R9" V 9280 3700 50  0000 C CNN
@@ -777,7 +814,7 @@ F 3 "" H 9200 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R10
+L R R10
 U 1 1 5BBF1303
 P 9000 3700
 F 0 "R10" V 9080 3700 50  0000 C CNN
@@ -788,7 +825,7 @@ F 3 "" H 9000 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Jumper_NO_Small JP1
+L Jumper_NO_Small JP1
 U 1 1 5BBF13F6
 P 9100 3400
 F 0 "JP1" H 9100 3480 50  0000 C CNN
@@ -801,7 +838,7 @@ $EndComp
 Text Notes 3950 2950 0    120  ~ 24
 CAN
 $Comp
-L MPPT-rescue:C_Small C13
+L C_Small C13
 U 1 1 5BBF56B4
 P 3950 3500
 F 0 "C13" H 3960 3570 50  0000 L CNN
@@ -812,7 +849,7 @@ F 3 "" H 3950 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C14
+L C_Small C14
 U 1 1 5BBF57F7
 P 4150 3500
 F 0 "C14" H 4160 3570 50  0000 L CNN
@@ -823,7 +860,7 @@ F 3 "" H 4150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C15
+L C_Small C15
 U 1 1 5BBF5AB0
 P 4400 3500
 F 0 "C15" H 4410 3570 50  0000 L CNN
@@ -834,7 +871,7 @@ F 3 "" H 4400 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C16
+L C_Small C16
 U 1 1 5BBF5B67
 P 4600 3500
 F 0 "C16" H 4610 3570 50  0000 L CNN
@@ -849,7 +886,7 @@ CAN_Rx
 Text Label 4250 3850 2    60   ~ 12
 CAN_Tx
 $Comp
-L MPPT-rescue:C_Small C10
+L C_Small C10
 U 1 1 5BBF707C
 P 7200 3350
 F 0 "C10" H 7210 3420 50  0000 L CNN
@@ -860,7 +897,7 @@ F 3 "" H 7200 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C9
+L C_Small C9
 U 1 1 5BBF71BA
 P 6750 3350
 F 0 "C9" H 6760 3420 50  0000 L CNN
@@ -871,7 +908,7 @@ F 3 "" H 6750 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Ferrite_Bead_Small L2
+L Ferrite_Bead_Small L2
 U 1 1 5BBF75A9
 P 7000 3200
 F 0 "L2" H 7075 3250 50  0000 L CNN
@@ -882,7 +919,7 @@ F 3 "" H 7000 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:Ferrite_Bead_Small L3
+L Ferrite_Bead_Small L3
 U 1 1 5BBF78B3
 P 7000 3500
 F 0 "L3" H 7075 3550 50  0000 L CNN
@@ -893,7 +930,7 @@ F 3 "" H 7000 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C11
+L C_Small C11
 U 1 1 5BBF7ED3
 P 7600 3350
 F 0 "C11" H 7610 3420 50  0000 L CNN
@@ -904,7 +941,7 @@ F 3 "" H 7600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C12
+L C_Small C12
 U 1 1 5BBF7FA8
 P 7850 3350
 F 0 "C12" H 7860 3420 50  0000 L CNN
@@ -917,7 +954,7 @@ $EndComp
 Text Notes 4400 3000 0    60   ~ 0
 This is really complicated.\nI blame Analog Devices.
 $Comp
-L MPPT-rescue:ADM3055E U5
+L ADM3055E U5
 U 1 1 5BBFC115
 P 5650 3750
 F 0 "U5" H 5400 4400 60  0000 C CNN
@@ -935,7 +972,7 @@ Must be close\nto V_ISO_Out
 Text Notes 7550 3100 0    40   ~ 0
 Must be close\nto V_ISO_In
 $Comp
-L MPPT-rescue:+3.3V #PWR015
+L +3.3V #PWR015
 U 1 1 5BC0D519
 P 7450 6050
 F 0 "#PWR015" H 7450 5900 50  0001 C CNN
@@ -946,7 +983,7 @@ F 3 "" H 7450 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+5V #PWR016
+L +5V #PWR016
 U 1 1 5BC0D66D
 P 7450 4800
 F 0 "#PWR016" H 7450 4650 50  0001 C CNN
@@ -957,7 +994,7 @@ F 3 "" H 7450 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+3.3V #PWR017
+L +3.3V #PWR017
 U 1 1 5BC0F1EA
 P 4600 3200
 F 0 "#PWR017" H 4600 3050 50  0001 C CNN
@@ -968,7 +1005,7 @@ F 3 "" H 4600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+5V #PWR018
+L +5V #PWR018
 U 1 1 5BC0F4B8
 P 3950 3200
 F 0 "#PWR018" H 3950 3050 50  0001 C CNN
@@ -979,7 +1016,7 @@ F 3 "" H 3950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CP1_Small C5
+L CP1_Small C5
 U 1 1 5BC18F68
 P 9900 1250
 F 0 "C5" H 9910 1320 50  0000 L CNN
@@ -990,7 +1027,7 @@ F 3 "" H 9900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CP1_Small C4
+L CP1_Small C4
 U 1 1 5BC1939A
 P 8650 1250
 F 0 "C4" H 8650 1300 50  0000 R BNN
@@ -1001,7 +1038,7 @@ F 3 "" H 8650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C6
+L C_Small C6
 U 1 1 5BC1DD30
 P 8650 6050
 F 0 "C6" H 8660 6120 50  0000 L CNN
@@ -1012,7 +1049,7 @@ F 3 "" H 8650 6050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C7
+L C_Small C7
 U 1 1 5BC1E839
 P 9950 6050
 F 0 "C7" H 9960 6120 50  0000 L CNN
@@ -1023,7 +1060,7 @@ F 3 "" H 9950 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C8
+L C_Small C8
 U 1 1 5BC1F45A
 P 10150 6050
 F 0 "C8" H 10160 6120 50  0000 L CNN
@@ -1036,7 +1073,7 @@ $EndComp
 Text Notes 9000 6450 0    40   ~ 0
 For decoupling, we\nadd extra capacitors\nand unlink the power\npins on either side
 $Comp
-L MPPT-rescue:TEST TP14
+L TEST TP14
 U 1 1 5BC226FB
 P 6400 3050
 F 0 "TP14" V 6500 3250 50  0000 L BNN
@@ -1047,7 +1084,7 @@ F 3 "" H 6400 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP16
+L TEST TP16
 U 1 1 5BC2391E
 P 7300 3850
 F 0 "TP16" V 7400 4050 50  0000 L BNN
@@ -1058,7 +1095,7 @@ F 3 "" H 7300 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP15
+L TEST TP15
 U 1 1 5BC242A0
 P 7300 3700
 F 0 "TP15" V 7400 3900 50  0000 L BNN
@@ -1069,7 +1106,7 @@ F 3 "" H 7300 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP13
+L TEST TP13
 U 1 1 5BC269CB
 P 6400 2900
 F 0 "TP13" V 6500 3100 50  0000 L BNN
@@ -1080,7 +1117,7 @@ F 3 "" H 6400 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR019
+L +9VA #PWR019
 U 1 1 5BC298F1
 P 9900 1100
 F 0 "#PWR019" H 9900 975 50  0001 C CNN
@@ -1091,7 +1128,7 @@ F 3 "" H 9900 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR020
+L +9VA #PWR020
 U 1 1 5BC299D8
 P 9850 5700
 F 0 "#PWR020" H 9850 5575 50  0001 C CNN
@@ -1102,7 +1139,7 @@ F 3 "" H 9850 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR021
+L +9VA #PWR021
 U 1 1 5BC29E5F
 P 8750 5700
 F 0 "#PWR021" H 8750 5575 50  0001 C CNN
@@ -1113,7 +1150,7 @@ F 3 "" H 8750 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR022
+L +9VA #PWR022
 U 1 1 5BC2A0EB
 P 1400 5100
 F 0 "#PWR022" H 1400 4975 50  0001 C CNN
@@ -1124,7 +1161,7 @@ F 3 "" H 1400 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR023
+L +9VA #PWR023
 U 1 1 5BC2A1CB
 P 1400 6600
 F 0 "#PWR023" H 1400 6475 50  0001 C CNN
@@ -1135,7 +1172,7 @@ F 3 "" H 1400 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR024
+L +9VA #PWR024
 U 1 1 5BC2A2F3
 P 7250 4800
 F 0 "#PWR024" H 7250 4675 50  0001 C CNN
@@ -1146,7 +1183,7 @@ F 3 "" H 7250 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:SW_Push SW1
+L SW_Push SW1
 U 1 1 5BC2A8D3
 P 5450 5050
 F 0 "SW1" H 5500 5150 50  0000 L CNN
@@ -1157,7 +1194,7 @@ F 3 "" H 5450 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR025
+L GNDPWR #PWR025
 U 1 1 5BC2B47A
 P 5150 5050
 F 0 "#PWR025" H 5150 4850 50  0001 C CNN
@@ -1169,7 +1206,7 @@ F 3 "" H 5150 5000 50  0001 C CNN
 $EndComp
 NoConn ~ 4950 4250
 $Comp
-L MPPT-rescue:GNDPWR #PWR026
+L GNDPWR #PWR026
 U 1 1 5BC2ECC6
 P 4600 3650
 F 0 "#PWR026" H 4600 3450 50  0001 C CNN
@@ -1180,7 +1217,7 @@ F 3 "" H 4600 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG027
+L PWR_FLAG #FLG027
 U 1 1 5BC3017A
 P 8250 3150
 F 0 "#FLG027" H 8250 3225 50  0001 C CNN
@@ -1191,7 +1228,7 @@ F 3 "" H 8250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG028
+L PWR_FLAG #FLG028
 U 1 1 5BC3065C
 P 8250 3350
 F 0 "#FLG028" H 8250 3425 50  0001 C CNN
@@ -1202,7 +1239,7 @@ F 3 "" H 8250 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:CDSOT23-T24CAN U7
+L CDSOT23-T24CAN U7
 U 1 1 5BC2BF90
 P 9050 3000
 F 0 "U7" H 9050 2850 60  0000 C CNN
@@ -1213,7 +1250,7 @@ F 3 "" H 9050 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:SW_DIP_x04 SW2
+L SW_DIP_x04 SW2
 U 1 1 5BC2E8A4
 P 5450 5550
 F 0 "SW2" H 5450 5200 50  0000 C CNN
@@ -1224,7 +1261,7 @@ F 3 "" H 5450 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR029
+L GNDPWR #PWR029
 U 1 1 5BC2E9F9
 P 5000 5700
 F 0 "#PWR029" H 5000 5500 50  0001 C CNN
@@ -1237,7 +1274,7 @@ $EndComp
 Text Notes 3750 4750 0    120  ~ 24
 LEDs
 $Comp
-L MPPT-rescue:LED_ALT LED4
+L LED_ALT LED4
 U 1 1 5BC31D32
 P 3300 7450
 F 0 "LED4" H 3300 7550 50  0000 C CNN
@@ -1248,7 +1285,7 @@ F 3 "" H 3300 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED5
+L LED_ALT LED5
 U 1 1 5BC321DC
 P 3700 7450
 F 0 "LED5" H 3700 7550 50  0000 C CNN
@@ -1259,7 +1296,7 @@ F 3 "" H 3700 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED1
+L LED_ALT LED1
 U 1 1 5BC3237D
 P 3300 5900
 F 0 "LED1" H 3300 6000 50  0000 C CNN
@@ -1270,7 +1307,7 @@ F 3 "" H 3300 5900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED2
+L LED_ALT LED2
 U 1 1 5BC325C8
 P 3650 5900
 F 0 "LED2" H 3650 6000 50  0000 C CNN
@@ -1281,7 +1318,7 @@ F 3 "" H 3650 5900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR030
+L GNDPWR #PWR030
 U 1 1 5BC32A4B
 P 3300 7700
 F 0 "#PWR030" H 3300 7500 50  0001 C CNN
@@ -1292,7 +1329,7 @@ F 3 "" H 3300 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR031
+L GNDPWR #PWR031
 U 1 1 5BC32DE8
 P 3700 7700
 F 0 "#PWR031" H 3700 7500 50  0001 C CNN
@@ -1311,7 +1348,7 @@ Text Label 3650 6250 0    60   ~ 12
 Text Label 3650 5350 0    60   ~ 12
 +Batt
 $Comp
-L MPPT-rescue:R_Small R15
+L R_Small R15
 U 1 1 5BC34208
 P 3300 7100
 F 0 "R15" H 3330 7120 50  0000 L CNN
@@ -1322,7 +1359,7 @@ F 3 "" H 3300 7100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R16
+L R_Small R16
 U 1 1 5BC346DB
 P 3700 7100
 F 0 "R16" H 3730 7120 50  0000 L CNN
@@ -1333,7 +1370,7 @@ F 3 "" H 3700 7100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R12
+L R_Small R12
 U 1 1 5BC34931
 P 3300 5550
 F 0 "R12" H 3330 5570 50  0000 L CNN
@@ -1344,7 +1381,7 @@ F 3 "" H 3300 5550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R13
+L R_Small R13
 U 1 1 5BC34C2A
 P 3650 5550
 F 0 "R13" H 3680 5570 50  0000 L CNN
@@ -1365,7 +1402,7 @@ Tracking
 Text Label 6000 6250 2    60   ~ 12
 Battery_Full
 $Comp
-L MPPT-rescue:Nucleo_L432KC U2
+L Nucleo_L432KC U2
 U 1 1 5BBBD3B0
 P 6700 5550
 F 0 "U2" H 6700 4700 60  0000 C CNN
@@ -1376,7 +1413,7 @@ F 3 "" H 6700 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED6
+L LED_ALT LED6
 U 1 1 5BC3C323
 P 4150 7450
 F 0 "LED6" H 4150 7550 50  0000 C CNN
@@ -1387,7 +1424,7 @@ F 3 "" H 4150 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR032
+L GNDPWR #PWR032
 U 1 1 5BC3C329
 P 4150 7700
 F 0 "#PWR032" H 4150 7500 50  0001 C CNN
@@ -1398,7 +1435,7 @@ F 3 "" H 4150 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R17
+L R_Small R17
 U 1 1 5BC3C32F
 P 4150 7100
 F 0 "R17" H 4180 7120 50  0000 L CNN
@@ -1413,7 +1450,7 @@ PWM
 Text Label 7400 5850 0    60   ~ 12
 PWM
 $Comp
-L MPPT-rescue:LED_ALT LED3
+L LED_ALT LED3
 U 1 1 5BC3DA9B
 P 4100 5900
 F 0 "LED3" H 4100 6000 50  0000 C CNN
@@ -1424,7 +1461,7 @@ F 3 "" H 4100 5900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R14
+L R_Small R14
 U 1 1 5BC3DAA7
 P 4100 5550
 F 0 "R14" H 4130 5570 50  0000 L CNN
@@ -1435,7 +1472,7 @@ F 3 "" H 4100 5550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:GNDREF #PWR033
+L GNDREF #PWR033
 U 1 1 5BC3DC13
 P 9300 2150
 F 0 "#PWR033" H 9300 1900 50  0001 C CNN
@@ -1446,7 +1483,7 @@ F 3 "" H 9300 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+12V #PWR034
+L +12V #PWR034
 U 1 1 5BC3DF59
 P 8900 2050
 F 0 "#PWR034" H 8900 1900 50  0001 C CNN
@@ -1457,7 +1494,7 @@ F 3 "" H 8900 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP17
+L TEST TP17
 U 1 1 5BC42BFA
 P 8900 2050
 F 0 "TP17" H 8900 2350 50  0000 C BNN
@@ -1468,7 +1505,7 @@ F 3 "" H 8900 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP18
+L TEST TP18
 U 1 1 5BC42C00
 P 9300 2150
 F 0 "TP18" H 9300 2450 50  0000 C BNN
@@ -1479,29 +1516,29 @@ F 3 "" H 9300 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C19
+L C_Small C19
 U 1 1 5BC45510
-P 0 3900
-F 0 "C19" H 10  3970 50  0000 L CNN
-F 1 "1uF" H 10  3820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 0   3900 50  0001 C CNN
-F 3 "" H 0   3900 50  0001 C CNN
-	1    0    3900
+P 1200 3800
+F 0 "C19" H 1210 3870 50  0000 L CNN
+F 1 "1uF" H 1210 3720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1200 3800 50  0001 C CNN
+F 3 "" H 1200 3800 50  0001 C CNN
+	1    1200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C20
+L C_Small C20
 U 1 1 5BC45DC6
-P 2100 3900
-F 0 "C20" H 2110 3970 50  0000 L CNN
-F 1 "1uF" H 2110 3820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2100 3900 50  0001 C CNN
-F 3 "" H 2100 3900 50  0001 C CNN
-	1    2100 3900
+P 2600 3800
+F 0 "C20" H 2610 3870 50  0000 L CNN
+F 1 "1uF" H 2610 3720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2600 3800 50  0001 C CNN
+F 3 "" H 2600 3800 50  0001 C CNN
+	1    2600 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R18
+L R_Small R18
 U 1 1 5BC49D64
 P 1950 5550
 F 0 "R18" H 1980 5570 50  0000 L CNN
@@ -1512,7 +1549,7 @@ F 3 "" H 1950 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C21
+L C_Small C21
 U 1 1 5BC49EBE
 P 2100 5800
 F 0 "C21" H 2110 5870 50  0000 L CNN
@@ -1525,7 +1562,7 @@ $EndComp
 Text Notes 2000 5850 2    40   Italic 0
 RC filter\noptional
 $Comp
-L MPPT-rescue:R_Small R19
+L R_Small R19
 U 1 1 5BC4CA2A
 P 1950 7050
 F 0 "R19" H 1980 7070 50  0000 L CNN
@@ -1536,7 +1573,7 @@ F 3 "" H 1950 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C22
+L C_Small C22
 U 1 1 5BC4CA30
 P 2100 7300
 F 0 "C22" H 2110 7370 50  0000 L CNN
@@ -1549,7 +1586,7 @@ $EndComp
 Text Notes 2000 7350 2    40   Italic 0
 RC filter\noptional
 $Comp
-L MPPT-rescue:GNDPWR #PWR035
+L GNDPWR #PWR035
 U 1 1 5BC4EE41
 P 1900 5150
 F 0 "#PWR035" H 1900 4950 50  0001 C CNN
@@ -1560,7 +1597,7 @@ F 3 "" H 1900 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR036
+L GNDPWR #PWR036
 U 1 1 5BC50370
 P 1900 6650
 F 0 "#PWR036" H 1900 6450 50  0001 C CNN
@@ -1571,7 +1608,7 @@ F 3 "" H 1900 6600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:PQMC3-Dx-Sx-S U1
+L PQMC3-Dx-Sx-S U1
 U 1 1 5BC52EE1
 P 9100 1250
 F 0 "U1" H 9100 1000 60  0000 C CNN
@@ -1583,7 +1620,7 @@ F 3 "" H 9100 1300 60  0001 C CNN
 $EndComp
 NoConn ~ 8800 1300
 $Comp
-L MPPT-rescue:C_Small C23
+L C_Small C23
 U 1 1 5BC537A1
 P 9600 1200
 F 0 "C23" H 9610 1270 50  0000 L CNN
@@ -1594,7 +1631,7 @@ F 3 "" H 9600 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED7
+L LED_ALT LED7
 U 1 1 5BC584BD
 P 4450 5900
 F 0 "LED7" H 4450 6000 50  0000 C CNN
@@ -1605,7 +1642,7 @@ F 3 "" H 4450 5900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R20
+L R_Small R20
 U 1 1 5BC584C3
 P 4450 5550
 F 0 "R20" H 4480 5570 50  0000 L CNN
@@ -1616,7 +1653,7 @@ F 3 "" H 4450 5550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR037
+L GNDPWR #PWR037
 U 1 1 5BC58852
 P 4450 6150
 F 0 "#PWR037" H 4450 5950 50  0001 C CNN
@@ -1627,7 +1664,7 @@ F 3 "" H 4450 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR038
+L +9VA #PWR038
 U 1 1 5BC58980
 P 4450 5400
 F 0 "#PWR038" H 4450 5275 50  0001 C CNN
@@ -1638,7 +1675,7 @@ F 3 "" H 4450 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CP1_Small C24
+L CP1_Small C24
 U 1 1 5BC5CC8B
 P 8250 1250
 F 0 "C24" H 8250 1300 50  0000 R BNN
@@ -1649,7 +1686,7 @@ F 3 "" H 8250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:L_Small L4
+L L_Small L4
 U 1 1 5BC5D15E
 P 8450 1100
 F 0 "L4" H 8480 1140 50  0000 L CNN
@@ -1662,7 +1699,7 @@ $EndComp
 Text Notes 9500 2950 0    40   ~ 0
 CAN Bus\nProtection
 $Comp
-L MPPT-rescue:+9VA #PWR039
+L +9VA #PWR039
 U 1 1 5BC74588
 P 9700 2050
 F 0 "#PWR039" H 9700 1925 50  0001 C CNN
@@ -1673,7 +1710,7 @@ F 3 "" H 9700 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR040
+L GNDPWR #PWR040
 U 1 1 5BC754C8
 P 10050 2150
 F 0 "#PWR040" H 10050 1950 50  0001 C CNN
@@ -1684,7 +1721,7 @@ F 3 "" H 10050 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDREF #PWR041
+L GNDREF #PWR041
 U 1 1 5BC77E73
 P 4100 6150
 F 0 "#PWR041" H 4100 5900 50  0001 C CNN
@@ -1695,7 +1732,7 @@ F 3 "" H 4100 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+12V #PWR042
+L +12V #PWR042
 U 1 1 5BC781A9
 P 4100 5400
 F 0 "#PWR042" H 4100 5250 50  0001 C CNN
@@ -1706,7 +1743,7 @@ F 3 "" H 4100 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED8
+L LED_ALT LED8
 U 1 1 5BC7B329
 P 4600 7450
 F 0 "LED8" H 4600 7550 50  0000 C CNN
@@ -1717,7 +1754,7 @@ F 3 "" H 4600 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR043
+L GNDPWR #PWR043
 U 1 1 5BC7B32F
 P 4600 7700
 F 0 "#PWR043" H 4600 7500 50  0001 C CNN
@@ -1728,7 +1765,7 @@ F 3 "" H 4600 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R21
+L R_Small R21
 U 1 1 5BC7B335
 P 4600 7100
 F 0 "R21" H 4630 7120 50  0000 L CNN
@@ -1741,7 +1778,7 @@ $EndComp
 Text Label 4600 6900 0    60   ~ 12
 CAN_Tx
 $Comp
-L MPPT-rescue:LED_ALT LED9
+L LED_ALT LED9
 U 1 1 5BC7B6F5
 P 5000 7450
 F 0 "LED9" H 5000 7550 50  0000 C CNN
@@ -1752,7 +1789,7 @@ F 3 "" H 5000 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR044
+L GNDPWR #PWR044
 U 1 1 5BC7B6FB
 P 5000 7700
 F 0 "#PWR044" H 5000 7500 50  0001 C CNN
@@ -1763,7 +1800,7 @@ F 3 "" H 5000 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R22
+L R_Small R22
 U 1 1 5BC7B701
 P 5000 7100
 F 0 "R22" H 5030 7120 50  0000 L CNN
@@ -1775,10 +1812,10 @@ F 3 "" H 5000 7100 50  0001 C CNN
 $EndComp
 Text Label 5000 6900 0    60   ~ 12
 CAN_Rx
-Text Notes -100 3750 3    40   Italic 0
+Text Notes 1100 3650 3    40   Italic 0
 filter\noptional
 $Comp
-L MPPT-rescue:TEST TP20
+L TEST TP20
 U 1 1 5BC87942
 P 4700 4000
 F 0 "TP20" H 4700 4300 50  0000 C BNN
@@ -1789,7 +1826,7 @@ F 3 "" H 4700 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP19
+L TEST TP19
 U 1 1 5BC87E62
 P 4400 4000
 F 0 "TP19" H 4400 4300 50  0000 C BNN
@@ -1800,7 +1837,7 @@ F 3 "" H 4400 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:D_Small_ALT D10
+L D_Small_ALT D10
 U 1 1 5BC902C1
 P 8350 6050
 F 0 "D10" H 8300 6130 50  0000 L CNN
@@ -1811,7 +1848,7 @@ F 3 "" V 8350 6050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:D_Zener_Small_ALT D9
+L D_Zener_Small_ALT D9
 U 1 1 5BC91283
 P 8050 6050
 F 0 "D9" H 8050 6140 50  0000 C CNN
@@ -1822,7 +1859,7 @@ F 3 "" V 8050 6050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP21
+L TEST TP21
 U 1 1 5BC9CC23
 P 8300 3950
 F 0 "TP21" H 8300 4250 50  0000 C BNN
@@ -1833,7 +1870,7 @@ F 3 "" H 8300 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP22
+L TEST TP22
 U 1 1 5BC9CD87
 P 8400 4200
 F 0 "TP22" V 8500 4400 50  0000 L BNN
@@ -1846,7 +1883,7 @@ $EndComp
 Text Notes 8350 1550 0    40   Italic 0
 pi filter\noptional
 $Comp
-L MPPT-rescue:TEST TP23
+L TEST TP23
 U 1 1 5BCA523D
 P 5550 1150
 F 0 "TP23" H 5550 1450 50  0000 C BNN
@@ -1857,7 +1894,7 @@ F 3 "" H 5550 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP24
+L TEST TP24
 U 1 1 5BCA5488
 P 6900 2350
 F 0 "TP24" H 6900 2650 50  0000 C BNN
@@ -1868,31 +1905,31 @@ F 3 "" H 6900 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R24
+L R_Small R24
 U 1 1 5BCAF842
-P 1900 3500
-F 0 "R24" H 1930 3520 50  0000 L CNN
-F 1 "1.7k" H 1930 3460 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 1900 3500 50  0001 C CNN
-F 3 "" H 1900 3500 50  0001 C CNN
-	1    1900 3500
+P 2400 3550
+F 0 "R24" H 2430 3570 50  0000 L CNN
+F 1 "1.7k" H 2430 3510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2400 3550 50  0001 C CNN
+F 3 "" H 2400 3550 50  0001 C CNN
+	1    2400 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R23
+L R_Small R23
 U 1 1 5BCAF9A6
-P -200 3500
-F 0 "R23" H -170 3520 50  0000 L CNN
-F 1 "1.7k" H -170 3460 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H -200 3500 50  0001 C CNN
-F 3 "" H -200 3500 50  0001 C CNN
-	1    -200 3500
+P 1000 3550
+F 0 "R23" H 1030 3570 50  0000 L CNN
+F 1 "1.7k" H 1030 3510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1000 3550 50  0001 C CNN
+F 3 "" H 1000 3550 50  0001 C CNN
+	1    1000 3550
 	0    -1   -1   0   
 $EndComp
-Text Notes 2000 3750 3    40   Italic 0
+Text Notes 2500 3650 3    40   Italic 0
 filter\noptional
 $Comp
-L MPPT-rescue:R R25
+L R R25
 U 1 1 5BCB4671
 P 6550 4300
 F 0 "R25" V 6630 4300 50  0000 C CNN
@@ -1903,7 +1940,7 @@ F 3 "" H 6550 4300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP25
+L TEST TP25
 U 1 1 5BCE37AD
 P 4600 2500
 F 0 "TP25" V 4700 2700 50  0000 L BNN
@@ -1914,7 +1951,7 @@ F 3 "" H 4600 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP26
+L TEST TP26
 U 1 1 5BCE457C
 P 7400 5250
 F 0 "TP26" V 7500 5450 50  0000 L BNN
@@ -1925,7 +1962,7 @@ F 3 "" H 7400 5250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP27
+L TEST TP27
 U 1 1 5BCE5042
 P 8350 6250
 F 0 "TP27" H 8350 6550 50  0000 C BNN
@@ -1936,7 +1973,7 @@ F 3 "" H 8350 6250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP28
+L TEST TP28
 U 1 1 5BCE54E2
 P 10150 6250
 F 0 "TP28" H 10150 6550 50  0000 C BNN
@@ -1947,7 +1984,7 @@ F 3 "" H 10150 6250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:D_Zener_ALT D11
+L D_Zener_ALT D11
 U 1 1 5C07D3D2
 P 2450 5800
 F 0 "D11" H 2450 5900 50  0000 C CNN
@@ -1958,7 +1995,7 @@ F 3 "" H 2450 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3500 1200 3600 1200
+	3500 1200 4900 1200
 Wire Wire Line
 	3600 1200 3600 1650
 Connection ~ 3600 1200
@@ -1966,9 +2003,9 @@ Wire Wire Line
 	3600 2350 3600 2050
 Connection ~ 3600 2350
 Wire Wire Line
-	1150 1200 2450 1200
+	1150 1200 3200 1200
 Wire Wire Line
-	2450 1150 2450 1200
+	2450 1150 2450 1550
 Connection ~ 2450 1200
 Wire Wire Line
 	2450 1850 2450 2350
@@ -1981,14 +2018,14 @@ Wire Notes Line
 Wire Notes Line
 	1450 2550 1450 2200
 Wire Wire Line
-	3100 1550 3200 1550
+	3100 1550 3700 1550
 Connection ~ 3200 1550
 Wire Wire Line
 	3000 1950 3000 1850
 Wire Wire Line
-	3000 1850 3200 1850
+	3000 1850 3300 1850
 Wire Wire Line
-	3200 1550 3200 1700
+	3200 1550 3200 1950
 Connection ~ 3200 1850
 Wire Wire Line
 	3200 2350 3200 2250
@@ -2011,7 +2048,7 @@ Connection ~ 4000 1200
 Wire Wire Line
 	4450 1750 4450 1800
 Wire Wire Line
-	4600 2150 4600 2350
+	4600 2150 4600 2500
 Connection ~ 4600 2350
 Wire Notes Line
 	4850 1350 4950 1350
@@ -2025,9 +2062,9 @@ Wire Wire Line
 	4800 900  4800 1200
 Connection ~ 4800 1200
 Wire Wire Line
-	5200 1200 5300 1200
+	5200 1200 6400 1200
 Wire Wire Line
-	5300 900  5300 1200
+	5300 900  5300 1550
 Wire Wire Line
 	5300 900  5200 900 
 Wire Notes Line
@@ -2049,10 +2086,12 @@ Wire Wire Line
 	1150 1400 1200 1400
 Wire Wire Line
 	1200 1400 1200 2350
+Connection ~ 2450 2350
 Wire Wire Line
 	6800 1400 6800 2350
 Wire Wire Line
 	6800 1400 6850 1400
+Connection ~ 5300 2350
 Wire Notes Line
 	5650 1600 5650 1950
 Wire Notes Line
@@ -2066,43 +2105,61 @@ Wire Notes Line
 Wire Notes Line
 	5850 1950 5850 2350
 Wire Wire Line
-	-400 3450 -400 3500
+	1550 3300 1550 3650
 Wire Wire Line
-	1050 4150 1050 4050
+	800  3500 800  3650
+Connection ~ 800  3550
 Wire Wire Line
-	-400 4150 0    4150
+	1850 3450 1850 3650
 Wire Wire Line
-	1350 4150 1350 4050
+	1550 4050 1550 3950
 Wire Wire Line
-	-400 4050 -400 4150
-Connection ~ -400 4150
+	800  4050 1850 4050
 Wire Wire Line
-	-300 3100 -400 3100
+	1850 4050 1850 3950
 Wire Wire Line
-	-400 3100 -400 3150
+	800  3950 800  4150
+Connection ~ 800  4050
 Wire Wire Line
-	2000 3500 2100 3500
+	900  3150 800  3150
 Wire Wire Line
-	1700 3500 1800 3500
+	800  3150 800  3200
 Wire Wire Line
-	1700 3450 1700 3500
+	3000 3300 3000 3650
 Wire Wire Line
-	3100 4150 3100 4050
+	2500 3550 3300 3550
 Wire Wire Line
-	1700 4150 2100 4150
+	2200 3550 2300 3550
 Wire Wire Line
-	3400 4150 3400 4050
+	2200 3500 2200 3650
+Connection ~ 2200 3550
 Wire Wire Line
-	1700 4050 1700 4150
-Connection ~ 1700 4150
+	3300 3450 3300 3650
 Wire Wire Line
-	1800 3100 1700 3100
+	3000 4050 3000 3950
 Wire Wire Line
-	1700 3100 1700 3150
+	2200 4050 3300 4050
 Wire Wire Line
-	8050 1050 8050 1100
+	3300 4050 3300 3950
 Wire Wire Line
-	8050 1350 8050 1400
+	2200 3950 2200 4150
+Connection ~ 2200 4050
+Wire Wire Line
+	2300 3150 2200 3150
+Wire Wire Line
+	2200 3150 2200 3200
+Wire Notes Line
+	550  4400 3600 4400
+Wire Notes Line
+	3600 4400 3600 2750
+Wire Notes Line
+	3600 2750 550  2750
+Wire Notes Line
+	550  2750 550  4400
+Wire Wire Line
+	8050 1050 8050 1150
+Wire Wire Line
+	8050 1350 8050 1450
 Wire Notes Line
 	550  550  550  2650
 Wire Notes Line
@@ -2119,18 +2176,18 @@ Connection ~ 3800 2350
 Wire Wire Line
 	4750 1800 4750 1750
 Wire Wire Line
-	4250 1800 4450 1800
+	4250 1800 4750 1800
 Wire Wire Line
 	4600 1850 4600 1800
 Connection ~ 4600 1800
 Wire Wire Line
 	4450 1450 4450 1400
 Wire Wire Line
-	4450 1400 4600 1400
+	4450 1400 4750 1400
 Wire Wire Line
 	4750 1400 4750 1450
 Wire Wire Line
-	4600 1150 4600 1200
+	4600 1150 4600 1400
 Connection ~ 4600 1200
 Connection ~ 4600 1400
 Wire Wire Line
@@ -2140,7 +2197,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 4850 7250 4800
 Wire Wire Line
-	7300 4950 7300 5250
+	7300 4950 7300 6400
 Wire Wire Line
 	7300 4950 7200 4950
 Wire Wire Line
@@ -2166,9 +2223,9 @@ Wire Notes Line
 Wire Notes Line
 	10450 550  7500 550 
 Wire Wire Line
-	7200 5850 7650 5850
+	7200 5850 8800 5850
 Wire Wire Line
-	9800 5850 9850 5850
+	9800 5850 10250 5850
 Wire Wire Line
 	9800 5950 9850 5950
 Wire Wire Line
@@ -2179,35 +2236,35 @@ Wire Wire Line
 Wire Wire Line
 	9800 6050 9850 6050
 Wire Wire Line
-	9850 6050 9850 6200
+	9850 6050 9850 6250
 Wire Wire Line
-	9800 5750 9850 5750
+	9800 5750 9950 5750
 Wire Wire Line
 	9850 5750 9850 5700
 Wire Wire Line
 	8750 5700 8750 5750
 Wire Wire Line
-	8650 5750 8750 5750
+	8650 5750 8800 5750
 Wire Wire Line
-	8750 6050 8750 6200
+	8750 6050 8750 6250
 Wire Wire Line
 	8750 6050 8800 6050
 Wire Wire Line
-	2450 2350 3000 2350
+	2450 2350 5300 2350
 Wire Wire Line
-	1100 2350 1200 2350
+	1100 2350 1450 2350
 Wire Notes Line
 	1900 2350 2450 2350
 Wire Notes Line
 	5300 2350 6000 2350
 Wire Wire Line
-	6450 2350 6800 2350
+	6450 2350 6900 2350
 Wire Wire Line
-	1400 5100 1400 5150
+	1400 5100 1400 5250
 Wire Wire Line
-	1400 5850 1400 6000
+	1400 5850 1400 6050
 Wire Wire Line
-	800  5300 800  5400
+	800  5300 800  5450
 Connection ~ 1400 6000
 Connection ~ 1400 5150
 Wire Wire Line
@@ -2218,7 +2275,7 @@ Wire Wire Line
 	1000 5450 1100 5450
 Connection ~ 800  5400
 Wire Wire Line
-	800  5650 800  5700
+	800  5650 800  5850
 Wire Wire Line
 	800  5700 1000 5700
 Wire Wire Line
@@ -2227,11 +2284,11 @@ Wire Wire Line
 	1000 5650 1100 5650
 Connection ~ 800  5700
 Wire Wire Line
-	1400 6600 1400 6650
+	1400 6600 1400 6750
 Wire Wire Line
-	1400 7350 1400 7500
+	1400 7350 1400 7550
 Wire Wire Line
-	800  6750 800  6900
+	800  6750 800  6950
 Connection ~ 1400 7500
 Connection ~ 1400 6650
 Wire Wire Line
@@ -2242,7 +2299,7 @@ Wire Wire Line
 	1000 6950 1100 6950
 Connection ~ 800  6900
 Wire Wire Line
-	800  7150 800  7200
+	800  7150 800  7300
 Wire Wire Line
 	800  7200 1000 7200
 Wire Wire Line
@@ -2291,7 +2348,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 3800 9850 3800
 Wire Wire Line
-	9650 3000 9650 3300
+	9650 3000 9650 3900
 Wire Wire Line
 	9650 3900 9850 3900
 Wire Wire Line
@@ -2301,7 +2358,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 4100 9550 3500
 Wire Wire Line
-	3950 3650 4150 3650
+	3950 3650 4950 3650
 Wire Wire Line
 	3950 3600 3950 3650
 Wire Wire Line
@@ -2314,9 +2371,9 @@ Wire Wire Line
 	4600 3650 4600 3600
 Connection ~ 4600 3650
 Wire Wire Line
-	4600 3200 4600 3350
+	4600 3200 4600 3400
 Wire Wire Line
-	4400 3350 4600 3350
+	4400 3350 4950 3350
 Wire Wire Line
 	4400 3350 4400 3400
 Wire Wire Line
@@ -2324,24 +2381,24 @@ Wire Wire Line
 Wire Wire Line
 	3950 3350 4150 3350
 Wire Wire Line
-	3950 3200 3950 3250
+	3950 3200 3950 3400
 Connection ~ 3950 3350
 Wire Wire Line
 	6750 3250 6750 3200
 Wire Wire Line
-	7200 3050 7200 3200
+	7200 3050 7200 3250
 Wire Wire Line
-	6350 3700 6450 3700
+	6350 3700 7300 3700
 Wire Wire Line
-	7200 3450 7200 3500
+	7200 3450 7200 3700
 Wire Wire Line
 	6750 3500 6750 3450
 Wire Wire Line
-	6550 3200 6750 3200
+	6550 3200 6900 3200
 Wire Wire Line
-	7100 3500 7200 3500
+	7100 3500 8100 3500
 Wire Wire Line
-	6350 3500 6550 3500
+	6350 3500 6900 3500
 Wire Wire Line
 	7600 3200 7600 3250
 Wire Wire Line
@@ -2359,9 +2416,9 @@ Connection ~ 7850 3200
 Connection ~ 6750 3500
 Connection ~ 7850 3500
 Wire Wire Line
-	4250 3850 4400 3850
+	4250 3850 4950 3850
 Wire Wire Line
-	4250 3950 4700 3950
+	4250 3950 4950 3950
 Wire Wire Line
 	6400 4300 6350 4300
 Wire Wire Line
@@ -2370,11 +2427,11 @@ Wire Wire Line
 	6450 3600 6350 3600
 Connection ~ 6450 3700
 Wire Wire Line
-	6550 3400 6550 3500
+	6550 3400 6550 3850
 Wire Wire Line
 	6550 3400 6350 3400
 Wire Wire Line
-	4900 3450 4900 3550
+	4900 3450 4900 3650
 Wire Wire Line
 	4900 3550 4950 3550
 Wire Wire Line
@@ -2387,9 +2444,9 @@ Wire Wire Line
 Wire Wire Line
 	6550 3300 6350 3300
 Wire Wire Line
-	6550 2900 6550 3200
+	6550 2900 6550 3300
 Wire Wire Line
-	6400 3050 6450 3050
+	6400 3050 7200 3050
 Wire Wire Line
 	6450 3050 6450 3200
 Wire Wire Line
@@ -2442,11 +2499,11 @@ Wire Wire Line
 Wire Wire Line
 	8650 1400 8650 1350
 Wire Wire Line
-	8050 1400 8250 1400
+	8050 1400 8800 1400
 Wire Wire Line
-	8550 1100 8650 1100
+	8550 1100 8800 1100
 Wire Wire Line
-	8050 6200 8350 6200
+	8050 6200 8750 6200
 Wire Wire Line
 	8650 6200 8650 6150
 Connection ~ 8750 6200
@@ -2456,10 +2513,10 @@ Connection ~ 8750 5750
 Wire Wire Line
 	9950 6150 9950 6200
 Wire Wire Line
-	9850 6200 9950 6200
+	9850 6200 10150 6200
 Connection ~ 9850 6200
 Wire Wire Line
-	9950 5750 9950 5900
+	9950 5750 9950 5950
 Connection ~ 9850 5750
 Wire Wire Line
 	10150 5950 10150 5900
@@ -2467,7 +2524,7 @@ Wire Wire Line
 	10150 5900 9950 5900
 Connection ~ 9950 5900
 Wire Wire Line
-	10150 6150 10150 6200
+	10150 6150 10150 6250
 Connection ~ 9950 6200
 Connection ~ 6550 3200
 Connection ~ 6450 3050
@@ -2478,9 +2535,10 @@ Connection ~ 7200 3700
 Wire Wire Line
 	6400 2900 6550 2900
 Wire Wire Line
-	9400 1400 9750 1400
+	9400 1400 9900 1400
 Wire Wire Line
 	9900 1100 9400 1100
+Connection ~ 3950 3650
 Wire Wire Line
 	8250 3350 8250 3300
 Connection ~ 8250 3300
@@ -2488,7 +2546,7 @@ Wire Wire Line
 	8250 3200 8250 3150
 Connection ~ 8250 3200
 Wire Wire Line
-	5000 5350 5000 5450
+	5000 5350 5000 5700
 Wire Wire Line
 	5000 5350 5150 5350
 Wire Wire Line
@@ -2549,20 +2607,26 @@ Wire Wire Line
 Wire Wire Line
 	4150 7000 4150 6900
 Wire Wire Line
-	0    4150 0    4000
+	1200 4050 1200 3900
 Wire Wire Line
-	2100 4150 2100 4000
+	2600 3550 2600 3700
+Connection ~ 2600 3550
 Wire Wire Line
-	-400 3500 -300 3500
+	2600 4050 2600 3900
 Wire Wire Line
-	2050 5550 2100 5550
+	1100 3550 1850 3550
+Wire Wire Line
+	800  3550 900  3550
+Connection ~ 1200 3550
+Wire Wire Line
+	2050 5550 2750 5550
 Wire Wire Line
 	2100 5550 2100 5700
 Wire Wire Line
 	2100 6000 2100 5900
 Connection ~ 2100 5550
 Wire Wire Line
-	2050 7050 2100 7050
+	2050 7050 2750 7050
 Wire Wire Line
 	2100 7050 2100 7200
 Wire Wire Line
@@ -2592,7 +2656,7 @@ Connection ~ 8650 1100
 Connection ~ 8650 1400
 Connection ~ 8050 1400
 Wire Wire Line
-	8050 1100 8250 1100
+	8050 1100 8350 1100
 Wire Wire Line
 	8250 1100 8250 1150
 Connection ~ 8250 1100
@@ -2618,13 +2682,13 @@ Connection ~ 8650 4100
 Wire Wire Line
 	9400 3000 9650 3000
 Wire Wire Line
-	7100 3200 7200 3200
+	7100 3200 9850 3200
 Wire Wire Line
-	8100 3300 8250 3300
+	8100 3300 9850 3300
 Wire Wire Line
-	6350 4000 8300 4000
+	6350 4000 9850 4000
 Wire Wire Line
-	6350 4100 8300 4100
+	6350 4100 9850 4100
 Wire Wire Line
 	5150 5050 5250 5050
 Wire Wire Line
@@ -2666,7 +2730,7 @@ Wire Wire Line
 	4700 4000 4700 3950
 Connection ~ 4700 3950
 Wire Wire Line
-	8350 6150 8350 6200
+	8350 6150 8350 6250
 Connection ~ 8650 6200
 Wire Wire Line
 	8350 5950 8350 5850
@@ -2705,20 +2769,20 @@ Wire Wire Line
 	1500 5850 1500 6000
 Connection ~ 1500 6000
 Wire Wire Line
-	1400 6000 1500 6000
+	1400 6000 2750 6000
 Wire Wire Line
 	1500 7350 1500 7500
 Wire Wire Line
-	1400 7500 1500 7500
+	1400 7500 2750 7500
 Connection ~ 1500 7500
 Wire Wire Line
-	2450 5450 2450 5550
+	2450 5450 2450 5650
 Connection ~ 2450 5550
 Wire Wire Line
 	2450 6000 2450 5950
 Connection ~ 2100 6000
 $Comp
-L MPPT-rescue:D_Zener_ALT D13
+L D_Zener_ALT D13
 U 1 1 5C07F1A2
 P 2450 7300
 F 0 "D13" H 2450 7400 50  0000 C CNN
@@ -2732,10 +2796,10 @@ Wire Wire Line
 	2450 7500 2450 7450
 Connection ~ 2100 7500
 Wire Wire Line
-	2450 6950 2450 7050
+	2450 6950 2450 7150
 Connection ~ 2450 7050
 $Comp
-L MPPT-rescue:D_ALT D12
+L D_ALT D12
 U 1 1 5C084A9F
 P 2750 5800
 F 0 "D12" H 2750 5900 50  0000 C CNN
@@ -2746,7 +2810,7 @@ F 3 "" H 2750 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:D_ALT D14
+L D_ALT D14
 U 1 1 5C084E0C
 P 2750 7300
 F 0 "D14" H 2750 7400 50  0000 C CNN
@@ -2757,7 +2821,7 @@ F 3 "" H 2750 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2750 6950 2750 7050
+	2750 6950 2750 7150
 Connection ~ 2750 7050
 Wire Wire Line
 	2750 6000 2750 5950
@@ -2766,399 +2830,16 @@ Wire Wire Line
 	2750 7500 2750 7450
 Connection ~ 2450 7500
 Wire Wire Line
-	2750 5450 2750 5550
+	2750 5450 2750 5650
 Connection ~ 2750 5550
-Connection ~ 0    4150
-Connection ~ 2100 4150
-Wire Wire Line
-	3600 1200 4000 1200
-Wire Wire Line
-	3600 2350 3800 2350
-Wire Wire Line
-	2450 1200 3200 1200
-Wire Wire Line
-	2450 1200 2450 1550
-Wire Wire Line
-	3200 1550 3700 1550
-Wire Wire Line
-	3200 1850 3300 1850
-Wire Wire Line
-	3200 1850 3200 1950
-Wire Wire Line
-	3200 2350 3600 2350
-Wire Wire Line
-	3000 2350 3200 2350
-Wire Wire Line
-	4000 2350 4600 2350
-Wire Wire Line
-	4000 1200 4600 1200
-Wire Wire Line
-	4600 2350 4600 2500
-Wire Wire Line
-	4600 2350 5300 2350
-Wire Wire Line
-	4800 1200 4900 1200
-Wire Wire Line
-	5300 1200 5550 1200
-Wire Wire Line
-	5300 1200 5300 1550
-Wire Wire Line
-	-400 4150 -400 4250
-Wire Wire Line
-	1700 4150 1700 4250
-Wire Wire Line
-	3800 2350 4000 2350
-Wire Wire Line
-	4600 1800 4750 1800
-Wire Wire Line
-	4600 1200 4600 1400
-Wire Wire Line
-	4600 1200 4800 1200
-Wire Wire Line
-	4600 1400 4750 1400
-Wire Wire Line
-	9850 5850 10250 5850
-Wire Wire Line
-	1400 6000 1400 6050
-Wire Wire Line
-	1400 5150 1400 5250
-Wire Wire Line
-	800  5400 800  5450
-Wire Wire Line
-	800  5700 800  5850
-Wire Wire Line
-	1400 7500 1400 7550
-Wire Wire Line
-	1400 6650 1400 6750
-Wire Wire Line
-	800  6900 800  6950
-Wire Wire Line
-	800  7200 800  7300
-Wire Wire Line
-	8750 5850 8800 5850
-Wire Wire Line
-	7650 5850 8050 5850
-Wire Wire Line
-	4450 1800 4600 1800
-Wire Wire Line
-	5550 1200 6400 1200
-Wire Wire Line
-	4150 3650 4400 3650
-Wire Wire Line
-	4400 3650 4600 3650
-Wire Wire Line
-	4600 3650 4900 3650
-Wire Wire Line
-	3950 3350 3950 3400
-Wire Wire Line
-	7600 3200 7850 3200
-Wire Wire Line
-	7200 3200 7200 3250
-Wire Wire Line
-	7200 3200 7600 3200
-Wire Wire Line
-	7200 3500 7200 3700
-Wire Wire Line
-	7200 3500 7600 3500
-Wire Wire Line
-	7600 3500 7850 3500
-Wire Wire Line
-	6750 3200 6900 3200
-Wire Wire Line
-	7850 3200 8250 3200
-Wire Wire Line
-	6750 3500 6900 3500
-Wire Wire Line
-	7850 3500 8100 3500
-Wire Wire Line
-	6450 3700 6750 3700
-Wire Wire Line
-	4900 3550 4900 3650
-Wire Wire Line
-	4900 3650 4950 3650
-Wire Wire Line
-	4600 3350 4600 3400
-Wire Wire Line
-	4600 3350 4950 3350
-Wire Wire Line
-	9450 4000 9850 4000
-Wire Wire Line
-	9550 4100 9850 4100
-Wire Wire Line
-	9750 3200 9850 3200
-Wire Wire Line
-	9650 3300 9650 3900
-Wire Wire Line
-	9650 3300 9850 3300
-Wire Wire Line
-	3950 3250 3950 3350
-Wire Wire Line
-	8750 6200 8750 6250
-Wire Wire Line
-	8750 5750 8800 5750
-Wire Wire Line
-	9850 6200 9850 6250
-Wire Wire Line
-	9850 5750 9950 5750
-Wire Wire Line
-	9950 5900 9950 5950
-Wire Wire Line
-	9950 6200 10150 6200
-Wire Wire Line
-	6550 3200 6550 3300
-Wire Wire Line
-	6450 3050 7200 3050
-Wire Wire Line
-	6550 3500 6750 3500
-Wire Wire Line
-	6550 3500 6550 3850
-Wire Wire Line
-	7200 3700 7300 3700
-Wire Wire Line
-	8250 3300 9650 3300
-Wire Wire Line
-	8250 3200 9750 3200
-Wire Wire Line
-	5000 5450 5000 5550
-Wire Wire Line
-	5000 5550 5000 5650
-Wire Wire Line
-	5000 5650 5000 5700
-Wire Wire Line
-	2100 5550 2450 5550
-Wire Wire Line
-	2100 7050 2450 7050
-Wire Wire Line
-	9750 1400 9900 1400
-Wire Wire Line
-	8050 1100 8050 1150
-Wire Wire Line
-	8650 1100 8800 1100
-Wire Wire Line
-	8650 1400 8800 1400
-Wire Wire Line
-	8050 1400 8050 1450
-Wire Wire Line
-	8250 1100 8350 1100
-Wire Wire Line
-	8250 1400 8650 1400
-Wire Wire Line
-	9000 4000 9450 4000
-Wire Wire Line
-	9200 4100 9550 4100
-Wire Wire Line
-	8550 4000 9000 4000
-Wire Wire Line
-	8650 4100 9200 4100
-Wire Wire Line
-	4400 3850 4950 3850
-Wire Wire Line
-	4700 3950 4950 3950
-Wire Wire Line
-	8650 6200 8750 6200
-Wire Wire Line
-	8350 5850 8750 5850
-Wire Wire Line
-	8050 5850 8350 5850
-Wire Wire Line
-	8350 6200 8650 6200
-Wire Wire Line
-	8350 6200 8350 6250
-Wire Wire Line
-	3200 1700 3200 1850
-Wire Wire Line
-	8300 4000 8550 4000
-Wire Wire Line
-	8300 4100 8650 4100
-Wire Wire Line
-	1200 2350 1450 2350
-Wire Wire Line
-	6800 2350 6900 2350
-Wire Wire Line
-	6750 3700 7200 3700
-Wire Wire Line
-	7300 5250 7300 6400
-Wire Wire Line
-	10150 6200 10150 6250
-Wire Wire Line
-	1500 6000 2100 6000
-Wire Wire Line
-	1500 7500 2100 7500
-Wire Wire Line
-	2450 5550 2450 5650
-Wire Wire Line
-	2450 5550 2750 5550
-Wire Wire Line
-	2100 6000 2450 6000
-Wire Wire Line
-	2100 7500 2450 7500
-Wire Wire Line
-	2450 7050 2450 7150
-Wire Wire Line
-	2450 7050 2750 7050
-Wire Wire Line
-	2750 7050 2750 7150
-Wire Wire Line
-	2450 6000 2750 6000
-Wire Wire Line
-	2450 7500 2750 7500
-Wire Wire Line
-	2750 5550 2750 5650
-Wire Wire Line
-	1050 4150 1350 4150
-Wire Wire Line
-	3100 4150 3400 4150
-$Comp
-L max400_option2-amplifier_current:MAX400_option2-Amplifier_Current U9
-U 1 1 5F5CB95C
-P 2600 3600
-F 0 "U9" H 2500 3800 50  0000 L CNN
-F 1 "MAX400_option2" H 2300 4000 50  0000 L CNN
-F 2 "MPPT_Custom:SOT95P280X145-6N" H 3150 3850 50  0001 C CNN
-F 3 "https://www.google.com/url?q=http://www.ti.com/lit/ds/symlink/ina181.pdf&sa=D&source=hangouts&ust=1599298999237000&usg=AFQjCNENDnVSIPCSOjCr8VHymvxr9Gseqw" H 2750 3750 50  0001 C CNN
-	1    2600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5F5CD0FD
-P 2650 3350
-F 0 "#PWR0101" H 2650 3200 50  0001 C CNN
-F 1 "+3.3V" H 2800 3300 50  0000 C CNN
-F 2 "" H 2650 3350 50  0001 C CNN
-F 3 "" H 2650 3350 50  0001 C CNN
-	1    2650 3350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2700 3900
-$Comp
-L power:GNDPWR #PWR0102
-U 1 1 5F5FE13E
-P 2550 3900
-F 0 "#PWR0102" H 2550 3700 50  0001 C CNN
-F 1 "GNDPWR" H 2554 3746 50  0000 C CNN
-F 2 "" H 2550 3850 50  0001 C CNN
-F 3 "" H 2550 3850 50  0001 C CNN
-	1    2550 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L max400_option2-amplifier_current:MAX400_option2-Amplifier_Current U8
-U 1 1 5F68D2F9
-P 550 3600
-F 0 "U8" H 450 3800 50  0000 L CNN
-F 1 "MAX400_option2" H 250 4000 50  0000 L CNN
-F 2 "MPPT_Custom:SOT95P280X145-6N" H 1100 3850 50  0001 C CNN
-F 3 "https://www.google.com/url?q=http://www.ti.com/lit/ds/symlink/ina181.pdf&sa=D&source=hangouts&ust=1599298999237000&usg=AFQjCNENDnVSIPCSOjCr8VHymvxr9Gseqw" H 700 3750 50  0001 C CNN
-	1    550  3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0103
-U 1 1 5F68D303
-P 600 3350
-F 0 "#PWR0103" H 600 3200 50  0001 C CNN
-F 1 "+3.3V" H 750 3300 50  0000 C CNN
-F 2 "" H 600 3350 50  0001 C CNN
-F 3 "" H 600 3350 50  0001 C CNN
-	1    600  3350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 650  3900
-$Comp
-L power:GNDPWR #PWR0104
-U 1 1 5F68D30E
-P 500 3900
-F 0 "#PWR0104" H 500 3700 50  0001 C CNN
-F 1 "GNDPWR" H 504 3746 50  0000 C CNN
-F 2 "" H 500 3850 50  0001 C CNN
-F 3 "" H 500 3850 50  0001 C CNN
-	1    500  3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 3500 1700 3750
-Connection ~ 1700 3500
-Wire Wire Line
-	2100 3500 2100 3800
-Wire Wire Line
-	2300 3500 2100 3500
-Connection ~ 2100 3500
-Wire Wire Line
-	2100 4150 3100 4150
-Connection ~ 3100 4150
-Wire Wire Line
-	2900 3600 3100 3600
-Connection ~ 3100 3600
-Wire Wire Line
-	3100 3600 3100 3750
-Wire Wire Line
-	2900 3600 2900 4100
-Wire Wire Line
-	2900 4100 2300 4100
-Wire Wire Line
-	2300 4100 2300 3700
-Connection ~ 2900 3600
-Wire Wire Line
-	3400 3400 3400 3600
-Wire Wire Line
-	3100 3600 3400 3600
-Connection ~ 3400 3600
-Wire Wire Line
-	3400 3600 3400 3750
-Wire Wire Line
-	3100 3100 3100 3600
-Wire Wire Line
-	-100 3500 0    3500
-Wire Wire Line
-	1050 3100 1050 3600
-Connection ~ 1050 3600
-Wire Wire Line
-	1050 3600 1050 3750
-Wire Wire Line
-	1050 3600 1350 3600
-Wire Wire Line
-	1350 3350 1350 3600
-Wire Wire Line
-	1350 3600 1350 3750
-Connection ~ 1350 3600
-Wire Wire Line
-	0    3500 0    3800
-Wire Wire Line
-	-400 3500 -400 3750
-Connection ~ -400 3500
-Wire Wire Line
-	250  3500 0    3500
-Connection ~ 0    3500
-Wire Wire Line
-	850  3600 1050 3600
-Wire Wire Line
-	0    4150 1050 4150
-Connection ~ 1050 4150
-Wire Wire Line
-	250  3700 250  4100
-Wire Wire Line
-	250  4100 850  4100
-Wire Wire Line
-	850  4100 850  3600
-Connection ~ 850  3600
-Wire Notes Line
-	3700 4450 -650 4450
-Wire Notes Line
-	-650 4450 -650 2700
-Wire Notes Line
-	3700 2700 3700 4450
-Wire Notes Line
-	-650 2700 3700 2700
-$Comp
-L MPPT-rescue:PWR_FLAG #FLG0101
-U 1 1 5FE3DAAA
-P 8650 1100
-F 0 "#FLG0101" H 8650 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 8650 1350 50  0000 C CNN
-F 2 "" H 8650 1100 50  0001 C CNN
-F 3 "" H 8650 1100 50  0001 C CNN
-	1    8650 1100
-	1    0    0    -1  
-$EndComp
+Connection ~ 1550 3550
+Connection ~ 1550 4050
+Connection ~ 1200 4050
+Connection ~ 1850 3550
+Wire Wire Line
+	1200 3700 1200 3550
+Connection ~ 3000 3550
+Connection ~ 3000 4050
+Connection ~ 2600 4050
+Connection ~ 3300 3550
 $EndSCHEMATC

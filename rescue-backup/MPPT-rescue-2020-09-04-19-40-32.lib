@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# MPPT-rescue_+12V
+# +12V
 #
-DEF MPPT-rescue_+12V #PWR 0 0 Y Y 1 F P
+DEF +12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "MPPT-rescue_+12V" 0 140 50 H V C CNN
+F1 "+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_+3.3V
+# +3.3V
 #
-DEF MPPT-rescue_+3.3V #PWR 0 0 Y Y 1 F P
+DEF +3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "MPPT-rescue_+3.3V" 0 140 50 H V C CNN
+F1 "+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_+5V
+# +5V
 #
-DEF MPPT-rescue_+5V #PWR 0 0 Y Y 1 F P
+DEF +5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "MPPT-rescue_+5V" 0 140 50 H V C CNN
+F1 "+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +46,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_+9VA
+# +9VA
 #
-DEF MPPT-rescue_+9VA #PWR 0 0 Y Y 1 F P
+DEF +9VA #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -125 50 H I C CNN
-F1 "MPPT-rescue_+9VA" 0 150 50 H V C CNN
+F1 "+9VA" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -61,11 +61,11 @@ X +9VA 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_ADM3055E
+# ADM3055E
 #
-DEF MPPT-rescue_ADM3055E U 0 40 Y Y 1 F N
+DEF ADM3055E U 0 40 Y Y 1 F N
 F0 "U" 0 650 60 H V C CNN
-F1 "MPPT-rescue_ADM3055E" 200 -100 60 H V C CNN
+F1 "ADM3055E" 200 -100 60 H V C CNN
 F2 "" 0 100 60 H I C CNN
 F3 "" 0 100 60 H I C CNN
 DRAW
@@ -94,11 +94,11 @@ X AUX_In 9 -700 -300 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_BatteryConnector
+# BatteryConnector
 #
-DEF MPPT-rescue_BatteryConnector J 0 40 Y Y 1 F N
+DEF BatteryConnector J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "MPPT-rescue_BatteryConnector" 0 200 60 H V C CNN
+F1 "BatteryConnector" 0 200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -108,11 +108,11 @@ X - 2 300 -100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_CANConnector
+# CANConnector
 #
-DEF MPPT-rescue_CANConnector J 0 40 Y Y 1 F N
+DEF CANConnector J 0 40 Y Y 1 F N
 F0 "J" 0 -250 60 H V C CNN
-F1 "MPPT-rescue_CANConnector" 0 250 60 H V C CNN
+F1 "CANConnector" 0 250 60 H V C CNN
 F2 "" 150 300 60 H I C CNN
 F3 "" 150 300 60 H I C CNN
 DRAW
@@ -124,11 +124,11 @@ X CAN_L 4 350 -150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_CDSOT23-T24CAN
+# CDSOT23-T24CAN
 #
-DEF MPPT-rescue_CDSOT23-T24CAN U 0 20 Y Y 1 F N
+DEF CDSOT23-T24CAN U 0 20 Y Y 1 F N
 F0 "U" 0 -150 60 H V C CNN
-F1 "MPPT-rescue_CDSOT23-T24CAN" 0 150 60 H V C CNN
+F1 "CDSOT23-T24CAN" 0 150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -139,11 +139,11 @@ X GND 3 350 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_CP1
+# CP1
 #
-DEF MPPT-rescue_CP1 C 0 10 N N 1 F N
+DEF CP1 C 0 10 N N 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "MPPT-rescue_CP1" 25 -100 50 H V L CNN
+F1 "CP1" 25 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -159,11 +159,11 @@ X ~ 2 0 -150 130 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_CP1_Small
+# CP1_Small
 #
-DEF MPPT-rescue_CP1_Small C 0 10 N N 1 F N
+DEF CP1_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "MPPT-rescue_CP1_Small" 10 -80 50 H V L CNN
+F1 "CP1_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -179,11 +179,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_C_Small
+# C_Small
 #
-DEF MPPT-rescue_C_Small C 0 10 N N 1 F N
+DEF C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "MPPT-rescue_C_Small" 10 -80 50 H V L CNN
+F1 "C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -197,11 +197,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_CarPowerConnector
+# CarPowerConnector
 #
-DEF MPPT-rescue_CarPowerConnector J 0 40 Y Y 1 F N
+DEF CarPowerConnector J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "MPPT-rescue_CarPowerConnector" 0 200 60 H V C CNN
+F1 "CarPowerConnector" 0 200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -211,11 +211,11 @@ X GND 2 300 -100 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_D_ALT
+# D_ALT
 #
-DEF MPPT-rescue_D_ALT D 0 40 N N 1 F N
+DEF D_ALT D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "MPPT-rescue_D_ALT" 0 -100 50 H V C CNN
+F1 "D_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -234,11 +234,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_D_Schottky
+# D_Schottky
 #
-DEF MPPT-rescue_D_Schottky D 0 40 N N 1 F N
+DEF D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "MPPT-rescue_D_Schottky" 0 -100 50 H V C CNN
+F1 "D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -257,11 +257,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_D_Small_ALT
+# D_Small_ALT
 #
-DEF MPPT-rescue_D_Small_ALT D 0 10 N N 1 F N
+DEF D_Small_ALT D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "MPPT-rescue_D_Small_ALT" -150 -80 50 H V L CNN
+F1 "D_Small_ALT" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -280,11 +280,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_D_Zener_ALT
+# D_Zener_ALT
 #
-DEF MPPT-rescue_D_Zener_ALT D 0 40 N N 1 F N
+DEF D_Zener_ALT D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "MPPT-rescue_D_Zener_ALT" 0 -100 50 H V C CNN
+F1 "D_Zener_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -303,11 +303,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_D_Zener_Small_ALT
+# D_Zener_Small_ALT
 #
-DEF MPPT-rescue_D_Zener_Small_ALT D 0 10 N N 1 F N
+DEF D_Zener_Small_ALT D 0 10 N N 1 F N
 F0 "D" 0 90 50 H V C CNN
-F1 "MPPT-rescue_D_Zener_Small_ALT" 0 -90 50 H V C CNN
+F1 "D_Zener_Small_ALT" 0 -90 50 H V C CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -326,11 +326,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_Ferrite_Bead_Small
+# Ferrite_Bead_Small
 #
-DEF MPPT-rescue_Ferrite_Bead_Small L 0 0 N Y 1 F N
+DEF Ferrite_Bead_Small L 0 0 N Y 1 F N
 F0 "L" 75 50 50 H V L CNN
-F1 "MPPT-rescue_Ferrite_Bead_Small" 75 -50 50 H V L CNN
+F1 "Ferrite_Bead_Small" 75 -50 50 H V L CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -347,11 +347,11 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_Fuse
+# Fuse
 #
-DEF MPPT-rescue_Fuse F 0 0 N Y 1 F N
+DEF Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "MPPT-rescue_Fuse" -75 0 50 V V C CNN
+F1 "Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -365,11 +365,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_GNDPWR
+# GNDPWR
 #
-DEF MPPT-rescue_GNDPWR #PWR 0 0 Y Y 1 F P
+DEF GNDPWR #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -200 50 H I C CNN
-F1 "MPPT-rescue_GNDPWR" 0 -130 50 H V C CNN
+F1 "GNDPWR" 0 -130 50 H V C CNN
 F2 "" 0 -50 50 H I C CNN
 F3 "" 0 -50 50 H I C CNN
 DRAW
@@ -384,11 +384,11 @@ X GNDPWR 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_GNDREF
+# GNDREF
 #
-DEF MPPT-rescue_GNDREF #PWR 0 0 Y Y 1 F P
+DEF GNDREF #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "MPPT-rescue_GNDREF" 0 -150 50 H V C CNN
+F1 "GNDREF" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -400,11 +400,11 @@ X GNDREF 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_INA21x
+# INA21x
 #
-DEF MPPT-rescue_INA21x U 0 40 Y Y 1 F N
+DEF INA21x U 0 40 Y Y 1 F N
 F0 "U" 200 -200 60 H V L CNN
-F1 "MPPT-rescue_INA21x" 200 200 60 H V L CNN
+F1 "INA21x" 200 200 60 H V L CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -418,11 +418,11 @@ X ~ 6 400 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_Jumper_NO_Small
+# Jumper_NO_Small
 #
-DEF MPPT-rescue_Jumper_NO_Small JP 0 30 N N 1 F N
+DEF Jumper_NO_Small JP 0 30 N N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "MPPT-rescue_Jumper_NO_Small" 10 -60 50 H V C CNN
+F1 "Jumper_NO_Small" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -433,11 +433,11 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_LED_ALT
+# LED_ALT
 #
-DEF MPPT-rescue_LED_ALT D 0 40 Y N 1 F N
+DEF LED_ALT D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "MPPT-rescue_LED_ALT" 0 -100 50 H V C CNN
+F1 "LED_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -454,11 +454,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_L_Core_Ferrite
+# L_Core_Ferrite
 #
-DEF MPPT-rescue_L_Core_Ferrite L 0 40 N N 1 F N
+DEF L_Core_Ferrite L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "MPPT-rescue_L_Core_Ferrite" 110 0 50 V V C CNN
+F1 "L_Core_Ferrite" 110 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -489,11 +489,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_L_Small
+# L_Small
 #
-DEF MPPT-rescue_L_Small L 0 10 N N 1 F N
+DEF L_Small L 0 10 N N 1 F N
 F0 "L" 30 40 50 H V L CNN
-F1 "MPPT-rescue_L_Small" 30 -40 50 H V L CNN
+F1 "L_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -512,11 +512,11 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_Nucleo_L432KC
+# Nucleo_L432KC
 #
-DEF MPPT-rescue_Nucleo_L432KC U 0 40 Y Y 1 F N
+DEF Nucleo_L432KC U 0 40 Y Y 1 F N
 F0 "U" 0 -850 60 H V C CNN
-F1 "MPPT-rescue_Nucleo_L432KC" 0 850 60 H V C CNN
+F1 "Nucleo_L432KC" 0 850 60 H V C CNN
 F2 "" 0 -300 60 H I C CNN
 F3 "" 0 -300 60 H I C CNN
 DRAW
@@ -586,11 +586,11 @@ X PB1 9 -500 -100 200 R 50 50 1 2 B
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_PQMC3-Dx-Sx-S
+# PQMC3-Dx-Sx-S
 #
-DEF MPPT-rescue_PQMC3-Dx-Sx-S U 0 40 Y Y 1 F N
+DEF PQMC3-Dx-Sx-S U 0 40 Y Y 1 F N
 F0 "U" 0 -250 60 H V C CNN
-F1 "MPPT-rescue_PQMC3-Dx-Sx-S" 0 300 60 H V C CNN
+F1 "PQMC3-Dx-Sx-S" 0 300 60 H V C CNN
 F2 "" 0 50 60 H I C CNN
 F3 "" 0 50 60 H I C CNN
 DRAW
@@ -605,11 +605,11 @@ X CS 8 300 50 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_PWR_FLAG
+# PWR_FLAG
 #
-DEF MPPT-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "MPPT-rescue_PWR_FLAG" 0 150 50 H V C CNN
+F1 "PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -618,11 +618,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_Q_NMOS_GDS
+# Q_NMOS_GDS
 #
-DEF MPPT-rescue_Q_NMOS_GDS Q 0 0 Y N 1 F N
+DEF Q_NMOS_GDS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "MPPT-rescue_Q_NMOS_GDS" 200 -50 50 H V L CNN
+F1 "Q_NMOS_GDS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -650,11 +650,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_R
+# R
 #
-DEF MPPT-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "MPPT-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -668,11 +668,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_R_Small
+# R_Small
 #
-DEF MPPT-rescue_R_Small R 0 10 N N 1 F N
+DEF R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "MPPT-rescue_R_Small" 30 -40 50 H V L CNN
+F1 "R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -685,11 +685,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_SW_DIP_x04
+# SW_DIP_x04
 #
-DEF MPPT-rescue_SW_DIP_x04 SW 0 0 Y N 1 F N
+DEF SW_DIP_x04 SW 0 0 Y N 1 F N
 F0 "SW" 0 350 50 H V C CNN
-F1 "MPPT-rescue_SW_DIP_x04" 0 -250 50 H V C CNN
+F1 "SW_DIP_x04" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -720,11 +720,11 @@ X ~ 8 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_SW_Push
+# SW_Push
 #
-DEF MPPT-rescue_SW_Push SW 0 40 N N 1 F N
+DEF SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "MPPT-rescue_SW_Push" 0 -60 50 H V C CNN
+F1 "SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -737,11 +737,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_SolarArrayConnector
+# SolarArrayConnector
 #
-DEF MPPT-rescue_SolarArrayConnector J 0 40 Y Y 1 F N
+DEF SolarArrayConnector J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "MPPT-rescue_SolarArrayConnector" 0 200 60 H V C CNN
+F1 "SolarArrayConnector" 0 200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -752,11 +752,11 @@ X - 3 300 -100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_TEST
+# TEST
 #
-DEF MPPT-rescue_TEST TP 0 40 N N 1 F N
+DEF TEST TP 0 40 N N 1 F N
 F0 "TP" 0 300 50 H V C BNN
-F1 "MPPT-rescue_TEST" 0 250 50 H V C CNN
+F1 "TEST" 0 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -765,11 +765,11 @@ X ~ 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MPPT-rescue_UCC37321
+# UCC37321
 #
-DEF MPPT-rescue_UCC37321 U 0 40 Y Y 1 F N
+DEF UCC37321 U 0 40 Y Y 1 F N
 F0 "U" 0 -250 60 H V C CNN
-F1 "MPPT-rescue_UCC37321" 0 250 60 H V C CNN
+F1 "UCC37321" 0 250 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -782,62 +782,6 @@ X PGND 5 500 -150 200 L 50 50 1 1 W
 X OUT 6 500 -50 200 L 50 50 1 1 O
 X OUT 7 500 50 200 L 50 50 1 1 O
 X VDD 8 500 150 200 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# max400_option2-amplifier_current_MAX400_option2-Amplifier_Current
-#
-DEF max400_option2-amplifier_current_MAX400_option2-Amplifier_Current U 0 5 Y Y 1 F N
-F0 "U" 150 150 50 H V L CNN
-F1 "max400_option2-amplifier_current_MAX400_option2-Amplifier_Current" 150 -100 50 H V L CNN
-F2 "" 550 250 50 H I C CNN
-F3 "" 150 150 50 H I C CNN
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-P 4 0 1 10 200 0 -200 200 -200 -200 200 0 f
-X ~ 1 300 0 100 L 50 50 1 1 O
-X VSS 2 -50 -300 169 U 50 50 1 1 W
-X IN+ 3 -300 100 100 R 50 50 1 1 I
-X IN- 4 -300 -100 100 R 50 50 1 1 I
-X SHDN 5 100 -300 250 U 50 20 1 1 I
-X VDD 6 50 250 169 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDPWR
-#
-DEF power_GNDPWR #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -200 50 H I C CNN
-F1 "power_GNDPWR" 0 -130 50 H V C CNN
-F2 "" 0 -50 50 H I C CNN
-F3 "" 0 -50 50 H I C CNN
-DRAW
-P 2 0 1 0 0 -50 0 0 N
-P 3 0 1 8 -40 -50 -50 -80 -50 -80 N
-P 3 0 1 8 -20 -50 -30 -80 -30 -80 N
-P 3 0 1 8 0 -50 -10 -80 -10 -80 N
-P 3 0 1 8 20 -50 10 -80 10 -80 N
-P 3 0 1 8 40 -50 -40 -50 -40 -50 N
-P 4 0 1 8 40 -50 30 -80 30 -80 30 -80 N
-X GNDPWR 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
