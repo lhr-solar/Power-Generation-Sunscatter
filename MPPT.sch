@@ -3161,4 +3161,37 @@ F 3 "" H 8650 1100 50  0001 C CNN
 	1    8650 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:Heatsink HS2
+U 1 1 5F5B266C
+P -950 2300
+F 0 "HS2" H -808 2421 50  0000 L CNN
+F 1 "Heatsink" H -808 2330 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK129-STS_42x25mm_2xDrill2.5mm" H -938 2300 50  0001 C CNN
+F 3 "~" H -938 2300 50  0001 C CNN
+	1    -950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink HS3
+U 1 1 5F5B5FD7
+P -950 2550
+F 0 "HS3" H -808 2671 50  0000 L CNN
+F 1 "Heatsink" H -808 2580 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK129-STS_42x25mm_2xDrill2.5mm" H -938 2550 50  0001 C CNN
+F 3 "~" H -938 2550 50  0001 C CNN
+	1    -950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5F5B6CE9
+P -950 2050
+F 0 "HS1" H -808 2171 50  0000 L CNN
+F 1 "Heatsink" H -808 2080 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK129-STS_42x25mm_2xDrill2.5mm" H -938 2050 50  0001 C CNN
+F 3 "~" H -938 2050 50  0001 C CNN
+	1    -950 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
