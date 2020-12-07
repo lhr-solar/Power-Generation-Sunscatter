@@ -5,4 +5,5 @@
   (lib (name UTSVT_Connectors)(type KiCad)(uri ${KIPRJMOD}/../Common/UTSVT_Connectors.pretty)(options "")(descr "Footprints for connectors specific to the UT SVT."))
   (lib (name UTSVT_Mechanical)(type KiCad)(uri ${KIPRJMOD}/../Common/UTSVT_Mechanical.pretty)(options "")(descr "Footprints for mechanical components (i.e. screws) specific to the UT SVT."))
   (lib (name MPPT_Custom)(type KiCad)(uri ${KIPRJMOD}/MPPT_Custom.pretty)(options "")(descr "Footprints for MPPT-specific components."))
+  (lib (name MPPT-PrimaryPCB)(type KiCad)(uri ${KIPRJMOD}/MPPT-PrimaryPCB.pretty)(options "")(descr ""))
 )
