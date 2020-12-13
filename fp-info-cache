@@ -1,4 +1,4 @@
-18725340838461992
+18726970672519828
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56252,6 +56252,13 @@ ADM3055EBRIZ
 20
 20
 MPPT-PrimaryPCB
+C_Rect_L26.5mm_W17.0mm_P22.50mm_MKS4
+C, Rect series, Radial, pin pitch=22.50mm, , length*width=26.5*11.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf
+C Rect series Radial pin pitch 22.50mm  length 26.5mm width 11.5mm Capacitor
+0
+2
+2
+MPPT-PrimaryPCB
 L_Toroid_Vertical_L46.0mm_W19.1mm_P21.80mm_Bourns_5700
 L_Toroid, Vertical series, Radial, pin pitch=21.80mm, , length*width=46*19.1mm^2, Bourns, 5700, http://www.bourns.com/docs/Product-Datasheets/5700_series.pdf
 L_Toroid Vertical series Radial pin pitch 21.80mm  length 46mm width 19.1mm Bourns 5700
@@ -56279,14 +56286,7 @@ SC70-6
 0
 6
 6
-MPPT_Custom
-C_Rect_L26.5mm_W17.0mm_P22.50mm_MKS4
-C, Rect series, Radial, pin pitch=22.50mm, , length*width=26.5*11.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf
-C Rect series Radial pin pitch 22.50mm  length 26.5mm width 11.5mm Capacitor
-0
-2
-2
-MPPT_Custom
+MPPT-PrimaryPCB
 SOT95P280X145-6N
 MAX40075AUT+
 Integrated Circuit
@@ -81087,6 +81087,13 @@ transformer flyback
 0
 10
 10
+UTSVT-KiCadLibraries
+TS01CQE
+
+
+0
+3
+3
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins

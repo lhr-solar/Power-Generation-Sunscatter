@@ -28,17 +28,6 @@ F 3 "" H 5600 1700 50  0001 C CNN
 $EndComp
 Text Label 5600 1400 2    39   ~ 8
 Drive_PWM
-$Comp
-L power:GNDPWR #PWR0101
-U 1 1 5BBC0FAD
-P 5150 2350
-F 0 "#PWR0101" H 5150 2150 50  0001 C CNN
-F 1 "GNDPWR" H 5150 2220 50  0000 C CNN
-F 2 "" H 5150 2300 50  0001 C CNN
-F 3 "" H 5150 2300 50  0001 C CNN
-	1    5150 2350
-	1    0    0    -1  
-$EndComp
 Text Label 2750 1650 0    39   ~ 8
 Battery_Current
 Text Label 2750 1450 0    39   ~ 8
@@ -47,17 +36,6 @@ Text Label 2750 1550 0    39   ~ 8
 Battery_Voltage
 Text Label 2750 1350 0    39   ~ 8
 Array_Voltage
-$Comp
-L power:GNDPWR #PWR0102
-U 1 1 5BBE863D
-P 3100 950
-F 0 "#PWR0102" H 3100 750 50  0001 C CNN
-F 1 "GNDPWR" V 3100 700 50  0000 C CNN
-F 2 "" H 3100 900 50  0001 C CNN
-F 3 "" H 3100 900 50  0001 C CNN
-	1    3100 950 
-	0    -1   -1   0   
-$EndComp
 Text Label 1400 850  1    39   ~ 8
 Reset
 Text Label 2750 1050 0    39   ~ 8
@@ -122,7 +100,7 @@ U 1 1 5BC1E839
 P 5300 2050
 F 0 "C2" V 5400 2000 50  0000 L CNN
 F 1 "1uF" V 5470 2000 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5300 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5300 2050 50  0001 C CNN
 F 3 "" H 5300 2050 50  0001 C CNN
 	1    5300 2050
 	1    0    0    -1  
@@ -275,17 +253,6 @@ F 3 "" H 3100 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR0108
-U 1 1 5BBC165F
-P 4100 2350
-F 0 "#PWR0108" H 4100 2150 50  0001 C CNN
-F 1 "GNDPWR" H 4100 2200 50  0000 C CNN
-F 2 "" H 4100 2300 50  0001 C CNN
-F 3 "" H 4100 2300 50  0001 C CNN
-	1    4100 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP3
 U 1 1 5BCE5042
 P 3600 2250
@@ -327,7 +294,6 @@ Wire Wire Line
 	2550 950  3100 950 
 Wire Wire Line
 	2550 850  2750 850 
-Connection ~ 3100 950 
 Wire Wire Line
 	2750 1050 2550 1050
 Wire Wire Line
@@ -368,17 +334,6 @@ Wire Wire Line
 	5300 1900 5300 1750
 Text Notes 4200 1100 0    39   ~ 0
 NOTE: We would ordinarily isolate the Nucleo from\nthe high power regions, but we don't have a good\nway to do that without redesigning our sensors and\nour software. Therefore, for reasons of expediency,\nwe're placing the Nucleo on the high power plane.
-$Comp
-L power:GNDPWR #PWR0109
-U 1 1 5BC2B47A
-P 850 850
-F 0 "#PWR0109" H 850 650 50  0001 C CNN
-F 1 "GNDPWR" H 850 700 50  0000 C CNN
-F 2 "" H 850 800 50  0001 C CNN
-F 3 "" H 850 800 50  0001 C CNN
-	1    850  850 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1250 850  1400 850 
 Wire Wire Line
@@ -389,7 +344,6 @@ Wire Wire Line
 	1550 1150 850  1150
 Wire Wire Line
 	850  1150 850  850 
-Connection ~ 850  850 
 Wire Notes Line
 	5800 550  550  550 
 Wire Notes Line
@@ -491,7 +445,7 @@ U 1 1 5BB2959B
 P 4450 3800
 F 0 "R13" V 4530 3800 50  0000 C CNN
 F 1 "R" V 4600 3750 50  0000 C CNN
-F 2 "" V 4380 3800 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" V 4380 3800 50  0001 C CNN
 F 3 "" H 4450 3800 50  0001 C CNN
 	1    4450 3800
 	1    0    0    -1  
@@ -590,30 +544,8 @@ F 3 "" H 2200 6050 50  0001 C CNN
 	1    2200 6050
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GNDPWR #PWR0110
-U 1 1 5BB2BED0
-P 750 6400
-F 0 "#PWR0110" H 750 6200 50  0001 C CNN
-F 1 "GNDPWR" H 750 6270 50  0000 C CNN
-F 2 "" H 750 6350 50  0001 C CNN
-F 3 "" H 750 6350 50  0001 C CNN
-	1    750  6400
-	1    0    0    -1  
-$EndComp
 Text Label 2200 5750 1    39   ~ 8
 Array_Voltage
-$Comp
-L power:GNDPWR #PWR0111
-U 1 1 5BB2E517
-P 3800 4600
-F 0 "#PWR0111" H 3800 4400 50  0001 C CNN
-F 1 "GNDPWR" H 3800 4470 50  0000 C CNN
-F 2 "" H 3800 4550 50  0001 C CNN
-F 3 "" H 3800 4550 50  0001 C CNN
-	1    3800 4600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Schottky D4
 U 1 1 5BB2EB96
@@ -624,17 +556,6 @@ F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" H 4750 3800 50  0001 C CNN
 F 3 "" H 4750 3800 50  0001 C CNN
 	1    4750 3800
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1 C9
-U 1 1 5BB295C8
-P 4600 4200
-F 0 "C9" H 4690 4240 50  0000 L CNN
-F 1 "CP" H 4690 4160 50  0000 L CNN
-F 2 "" H 4600 4200 50  0001 C CNN
-F 3 "" H 4600 4200 50  0001 C CNN
-	1    4600 4200
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse F2
@@ -667,28 +588,6 @@ F 3 "" H 8300 4050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR0112
-U 1 1 5BBD5959
-P 8300 4550
-F 0 "#PWR0112" H 8300 4350 50  0001 C CNN
-F 1 "GNDPWR" H 8300 4420 50  0000 C CNN
-F 2 "" H 8300 4500 50  0001 C CNN
-F 3 "" H 8300 4500 50  0001 C CNN
-	1    8300 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0113
-U 1 1 5BBD5CC8
-P 7700 3800
-F 0 "#PWR0113" H 7700 3600 50  0001 C CNN
-F 1 "GNDPWR" H 7700 3670 50  0000 C CNN
-F 2 "" H 7700 3750 50  0001 C CNN
-F 3 "" H 7700 3750 50  0001 C CNN
-	1    7700 3800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C11
 U 1 1 5BBD6119
 P 8600 3650
@@ -717,17 +616,6 @@ F 3 "" H 10750 4050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR0114
-U 1 1 5BBD7DFF
-P 10750 4550
-F 0 "#PWR0114" H 10750 4350 50  0001 C CNN
-F 1 "GNDPWR" H 10750 4420 50  0000 C CNN
-F 2 "" H 10750 4500 50  0001 C CNN
-F 3 "" H 10750 4500 50  0001 C CNN
-	1    10750 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C13
 U 1 1 5BBD7E19
 P 11050 3650
@@ -742,17 +630,6 @@ Text Label 10150 3750 1    39   ~ 8
 -Batt
 Text Label 11800 4050 1    39   ~ 8
 Battery_Current
-$Comp
-L power:GNDPWR #PWR0115
-U 1 1 5BBD81EA
-P 10150 4300
-F 0 "#PWR0115" H 10150 4100 50  0001 C CNN
-F 1 "GNDPWR" H 10150 4170 50  0000 C CNN
-F 2 "" H 10150 4250 50  0001 C CNN
-F 3 "" H 10150 4250 50  0001 C CNN
-	1    10150 4300
-	1    0    0    -1  
-$EndComp
 Text Notes 10000 3450 0    40   ~ 0
 This looks weird,\nbut it is correct.\nCurrent flows out\nof battery's -.
 Text Notes 11800 3050 0    39   ~ 0
@@ -1097,17 +974,6 @@ F 3 "" H 10750 3600 50  0001 C CNN
 $EndComp
 NoConn ~ 7050 6450
 $Comp
-L power:GNDPWR #PWR0120
-U 1 1 5BC2ECC6
-P 6700 5850
-F 0 "#PWR0120" H 6700 5650 50  0001 C CNN
-F 1 "GNDPWR" H 6700 5720 50  0000 C CNN
-F 2 "" H 6700 5800 50  0001 C CNN
-F 3 "" H 6700 5800 50  0001 C CNN
-	1    6700 5850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5BC3017A
 P 10350 5350
@@ -1194,28 +1060,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 11450 4300 50  0001 C CNN
 F 3 "" H 11450 4300 50  0001 C CNN
 	1    11450 4300
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0121
-U 1 1 5BC4EE41
-P 8800 3650
-F 0 "#PWR0121" H 8800 3450 50  0001 C CNN
-F 1 "GNDPWR" H 8800 3520 50  0000 C CNN
-F 2 "" H 8800 3600 50  0001 C CNN
-F 3 "" H 8800 3600 50  0001 C CNN
-	1    8800 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GNDPWR #PWR0122
-U 1 1 5BC50370
-P 11250 3650
-F 0 "#PWR0122" H 11250 3450 50  0001 C CNN
-F 1 "GNDPWR" H 11250 3520 50  0000 C CNN
-F 2 "" H 11250 3600 50  0001 C CNN
-F 3 "" H 11250 3600 50  0001 C CNN
-	1    11250 3650
-	0    -1   -1   0   
 $EndComp
 Text Notes 11600 5150 0    40   ~ 0
 CAN Bus\nProtection
@@ -1981,17 +1825,6 @@ F 3 "" H 1750 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1800 6050
-$Comp
-L power:GNDPWR #PWR0124
-U 1 1 5F68D30E
-P 1650 6050
-F 0 "#PWR0124" H 1650 5850 50  0001 C CNN
-F 1 "GNDPWR" H 1654 5896 50  0000 C CNN
-F 2 "" H 1650 6000 50  0001 C CNN
-F 3 "" H 1650 6000 50  0001 C CNN
-	1    1650 6050
-	1    0    0    -1  
-$EndComp
 Connection ~ 2200 5750
 Wire Wire Line
 	2200 5750 2200 5900
@@ -2060,7 +1893,7 @@ F 3 "" H 2450 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2010 7900 0    40   ~ 0
-Changes from 3.1+:\n\nSchematic:\n- Reannotated all component labels and reverted rescued schematic symbols.\n- Rearranged schematic and cleaned up component positioning.\n- Created Array.lib for array-relevant schematic symbols.\n- Swapped out zener diodes going into the uC from 3.6V to 3.9V.\n- Updated the LEDs and resistors for Xx_live indicators.\n- Added Error indicator LED.\n- Shifted pins for voltage/current sensors to accomodate STLink UART2.\n- Added fuse on the array side.\n- Added unity gain filter to voltage sensors.\n- Errata: swapped 0.22uF and 10uF capacitors on CAN circuit to correct positions.\n\nLayout:\n- Created MPPT-PrimaryPCB.pretty for custom footprints.\n- Specified that board should be 2oz copper/ft.\n- Comprehensive redesign of layout.
+Changes from 3.1+:\n\nSchematic:\n- Reannotated all component labels and reverted rescued schematic symbols.\n- Rearranged schematic and cleaned up component positioning.\n- Created Array.lib for array-relevant schematic symbols.\n- Swapped out zener diodes going into the uC from 3.6V to 3.9V.\n- Updated the LEDs and resistors for Xx_live indicators.\n- Added Error indicator LED.\n- Shifted pins for voltage/current sensors to accomodate STLink UART2.\n- Added fuse on the array side.\n- Added unity gain filter to voltage sensors.\n- Errata: swapped 0.22uF and 10uF capacitors on CAN circuit to correct positions.\n\nLayout:\n- Created MPPT-PrimaryPCB.pretty for custom footprints.\n- Specified that board should be 2oz copper/ft.\n- Re-specified snubber circuit footprints.\n- Comprehensive redesign of layout.
 Text Notes 10900 750  0    120  ~ 24
 Power Regulation
 $Comp
@@ -2077,12 +1910,12 @@ $EndComp
 $Comp
 L power:GNDREF #PWR0125
 U 1 1 5BB2D2AA
-P 10150 1650
-F 0 "#PWR0125" H 10150 1400 50  0001 C CNN
-F 1 "GNDREF" H 10150 1500 50  0000 C CNN
-F 2 "" H 10150 1650 50  0001 C CNN
-F 3 "" H 10150 1650 50  0001 C CNN
-	1    10150 1650
+P 12000 1600
+F 0 "#PWR0125" H 12000 1350 50  0001 C CNN
+F 1 "GNDREF" H 12000 1450 50  0000 C CNN
+F 2 "" H 12000 1600 50  0001 C CNN
+F 3 "" H 12000 1600 50  0001 C CNN
+	1    12000 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2099,12 +1932,12 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR0127
 U 1 1 5BBBF0C7
-P 12000 1600
-F 0 "#PWR0127" H 12000 1400 50  0001 C CNN
-F 1 "GNDPWR" H 12000 1470 50  0000 C CNN
-F 2 "" H 12000 1550 50  0001 C CNN
-F 3 "" H 12000 1550 50  0001 C CNN
-	1    12000 1600
+P 10150 1650
+F 0 "#PWR0127" H 10150 1450 50  0001 C CNN
+F 1 "GNDPWR" H 10150 1520 50  0000 C CNN
+F 2 "" H 10150 1600 50  0001 C CNN
+F 3 "" H 10150 1600 50  0001 C CNN
+	1    10150 1650
 	1    0    0    -1  
 $EndComp
 Text Notes 12450 1700 1    60   ~ 0
@@ -2112,23 +1945,12 @@ High Power\nControl
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5BBEB797
-P 10500 2400
-F 0 "TP7" H 10500 2700 50  0000 C BNN
-F 1 "+9VA" H 10500 2650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10500 2400 50  0001 C CNN
-F 3 "" H 10500 2400 50  0001 C CNN
-	1    10500 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5BBEBBC8
-P 10800 2400
-F 0 "TP8" H 10800 2700 50  0000 C BNN
-F 1 "GNDP" H 10800 2650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10800 2400 50  0001 C CNN
-F 3 "" H 10800 2400 50  0001 C CNN
-	1    10800 2400
+P 10560 2400
+F 0 "TP7" H 10560 2700 50  0000 C BNN
+F 1 "+9VA" H 10560 2650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10560 2400 50  0001 C CNN
+F 3 "" H 10560 2400 50  0001 C CNN
+	1    10560 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2197,17 +2019,6 @@ F 3 "" H 6700 1700 50  0001 C CNN
 	1    6700 1700
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GNDPWR #PWR0129
-U 1 1 5BC32DE8
-P 8550 2000
-F 0 "#PWR0129" H 8550 1800 50  0001 C CNN
-F 1 "GNDPWR" H 8550 1870 50  0000 C CNN
-F 2 "" H 8550 1950 50  0001 C CNN
-F 3 "" H 8550 1950 50  0001 C CNN
-	1    8550 2000
-	0    -1   -1   0   
-$EndComp
 Text Label 7050 2150 0    39   ~ 8
 -Arr
 Text Label 6150 2150 2    39   ~ 8
@@ -2251,17 +2062,6 @@ F 3 "" H 8300 1600 50  0001 C CNN
 	1    8300 1600
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GNDPWR #PWR0130
-U 1 1 5BC3C329
-P 8550 1600
-F 0 "#PWR0130" H 8550 1400 50  0001 C CNN
-F 1 "GNDPWR" H 8550 1470 50  0000 C CNN
-F 2 "" H 8550 1550 50  0001 C CNN
-F 3 "" H 8550 1550 50  0001 C CNN
-	1    8550 1600
-	0    -1   -1   0   
-$EndComp
 Text Label 7750 1600 2    39   ~ 8
 PWM
 $Comp
@@ -2276,11 +2076,11 @@ F 3 "" H 6700 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDREF #PWR0131
+L power:GNDPWR #PWR0131
 U 1 1 5BC3DC13
 P 10200 2400
 F 0 "#PWR0131" H 10200 2150 50  0001 C CNN
-F 1 "GNDREF" H 10200 2250 50  0000 C CNN
+F 1 "GNDPWR" H 10200 2250 50  0000 C CNN
 F 2 "" H 10200 2400 50  0001 C CNN
 F 3 "" H 10200 2400 50  0001 C CNN
 	1    10200 2400
@@ -2296,17 +2096,6 @@ F 2 "" H 9800 2400 50  0001 C CNN
 F 3 "" H 9800 2400 50  0001 C CNN
 	1    9800 2400
 	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5BC42C00
-P 10200 2400
-F 0 "TP6" H 10200 2700 50  0000 C BNN
-F 1 "Car GND" H 10200 2650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10200 2400 50  0001 C CNN
-F 3 "" H 10200 2400 50  0001 C CNN
-	1    10200 2400
-	1    0    0    -1  
 $EndComp
 NoConn ~ 10900 1500
 $Comp
@@ -2334,12 +2123,12 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR0133
 U 1 1 5BC58852
-P 6950 800
-F 0 "#PWR0133" H 6950 600 50  0001 C CNN
-F 1 "GNDPWR" H 6950 650 50  0000 C CNN
-F 2 "" H 6950 750 50  0001 C CNN
-F 3 "" H 6950 750 50  0001 C CNN
-	1    6950 800 
+P 6950 1250
+F 0 "#PWR0133" H 6950 1050 50  0001 C CNN
+F 1 "GNDPWR" H 6950 1100 50  0000 C CNN
+F 2 "" H 6950 1200 50  0001 C CNN
+F 3 "" H 6950 1200 50  0001 C CNN
+	1    6950 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2367,35 +2156,13 @@ $EndComp
 $Comp
 L power:+9VA #PWR0135
 U 1 1 5BC74588
-P 10500 2400
-F 0 "#PWR0135" H 10500 2275 50  0001 C CNN
-F 1 "+9VA" H 10500 2550 50  0000 C CNN
-F 2 "" H 10500 2400 50  0001 C CNN
-F 3 "" H 10500 2400 50  0001 C CNN
-	1    10500 2400
+P 10560 2400
+F 0 "#PWR0135" H 10560 2275 50  0001 C CNN
+F 1 "+9VA" H 10560 2550 50  0000 C CNN
+F 2 "" H 10560 2400 50  0001 C CNN
+F 3 "" H 10560 2400 50  0001 C CNN
+	1    10560 2400
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GNDPWR #PWR0136
-U 1 1 5BC754C8
-P 10800 2400
-F 0 "#PWR0136" H 10800 2200 50  0001 C CNN
-F 1 "GNDPWR" H 10800 2270 50  0000 C CNN
-F 2 "" H 10800 2350 50  0001 C CNN
-F 3 "" H 10800 2350 50  0001 C CNN
-	1    10800 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0137
-U 1 1 5BC77E73
-P 6950 1250
-F 0 "#PWR0137" H 6950 1000 50  0001 C CNN
-F 1 "GNDREF" H 6950 1100 50  0000 C CNN
-F 2 "" H 6950 1250 50  0001 C CNN
-F 3 "" H 6950 1250 50  0001 C CNN
-	1    6950 1250
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+12V #PWR0138
@@ -2418,17 +2185,6 @@ F 2 "LED_SMD:LED_0805_2012Metric" H 8300 1200 50  0001 C CNN
 F 3 "" H 8300 1200 50  0001 C CNN
 	1    8300 1200
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GNDPWR #PWR0139
-U 1 1 5BC7B32F
-P 8550 1200
-F 0 "#PWR0139" H 8550 1000 50  0001 C CNN
-F 1 "GNDPWR" H 8550 1070 50  0000 C CNN
-F 2 "" H 8550 1150 50  0001 C CNN
-F 3 "" H 8550 1150 50  0001 C CNN
-	1    8550 1200
-	0    -1   -1   0   
 $EndComp
 Text Label 7750 1200 2    39   ~ 8
 CAN_Tx
@@ -2521,8 +2277,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 800  6550 800 
 Wire Wire Line
-	6850 800  6950 800 
-Wire Wire Line
 	11850 1600 12000 1600
 Wire Wire Line
 	10150 1300 10150 1350
@@ -2597,7 +2351,7 @@ Wire Notes Line
 Wire Notes Line
 	9500 2650 5900 2650
 Text Notes 11750 2600 0    39   ~ 0
-Isolated Power Regions:\n* High Power/Nucleo\n   - +/-Arr\n   - +/-Batt\n   - +9A, +5V, +3.3V\n   - GNDPWR\n* Low Car Power\n   - +12V\n   - GNDREF
+Isolated Power Regions:\n* Device/Board Power\n   - +/-Arr\n   - +/-Batt\n   - +9VA, +5V, +3.3V\n   - GNDREF\n* Car Power\n   - +12V\n   - GNDPWR
 $Comp
 L Device:R_Small R7
 U 1 1 5BC346DB
@@ -2662,17 +2416,6 @@ F 3 "" H 8300 2400 50  0001 C CNN
 	1    8300 2400
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GNDPWR #PWR0141
-U 1 1 61153487
-P 8550 2400
-F 0 "#PWR0141" H 8550 2200 50  0001 C CNN
-F 1 "GNDPWR" H 8550 2270 50  0000 C CNN
-F 2 "" H 8550 2350 50  0001 C CNN
-F 3 "" H 8550 2350 50  0001 C CNN
-	1    8550 2400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8550 2400 8450 2400
 Wire Wire Line
@@ -2726,8 +2469,8 @@ F 3 "~" H 1150 1700 50  0001 C CNN
 	1    1150 1700
 	1    0    0    -1  
 $EndComp
-Text Notes 3400 2900 0    40   ~ 0
-Check current board and see their values for R12, C9
+Text Notes 5980 3120 0    40   ~ 0
+R13, C9 are experimental and are through \nhole components with a range of values.
 $Comp
 L Device:Fuse F1
 U 1 1 619A8D12
@@ -2771,17 +2514,6 @@ F 2 "LED_SMD:LED_0805_2012Metric" H 9200 1650 50  0001 C CNN
 F 3 "" H 9200 1650 50  0001 C CNN
 	1    9200 1650
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDPWR #PWR0142
-U 1 1 5FD9E601
-P 9200 1400
-F 0 "#PWR0142" H 9200 1200 50  0001 C CNN
-F 1 "GNDPWR" H 9200 1270 50  0000 C CNN
-F 2 "" H 9200 1350 50  0001 C CNN
-F 3 "" H 9200 1350 50  0001 C CNN
-	1    9200 1400
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9200 1400 9200 1500
@@ -2855,8 +2587,6 @@ F 3 "~" H 650 7400 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	5750 4950 5750 6600
-Text Notes 5050 5450 0    39   ~ 0
-Voltage dividers fed \ninto a unity gain op \namp
 Text Notes 4200 5200 0    120  ~ 24
 Voltage Sensors
 Connection ~ 4550 5750
@@ -2883,17 +2613,6 @@ Wire Wire Line
 	3450 5650 3250 5650
 Wire Wire Line
 	3250 5650 3250 5950
-$Comp
-L power:GNDPWR #PWR0143
-U 1 1 5F5FE13E
-P 3700 6050
-F 0 "#PWR0143" H 3700 5850 50  0001 C CNN
-F 1 "GNDPWR" H 3704 5896 50  0000 C CNN
-F 2 "" H 3700 6000 50  0001 C CNN
-F 3 "" H 3700 6000 50  0001 C CNN
-	1    3700 6050
-	1    0    0    -1  
-$EndComp
 NoConn ~ 3850 6050
 $Comp
 L power:+3.3V #PWR0144
@@ -2972,17 +2691,6 @@ Text Label 2850 5250 1    39   ~ 8
 +Batt
 Text Label 4250 5750 1    39   ~ 8
 Battery_Voltage
-$Comp
-L power:GNDPWR #PWR0145
-U 1 1 5BB2C218
-P 2850 6400
-F 0 "#PWR0145" H 2850 6200 50  0001 C CNN
-F 1 "GNDPWR" H 2850 6270 50  0000 C CNN
-F 2 "" H 2850 6350 50  0001 C CNN
-F 3 "" H 2850 6350 50  0001 C CNN
-	1    2850 6400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Zener_ALT D13
 U 1 1 5BB2C203
@@ -3181,17 +2889,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 5650 3250 5650
 Connection ~ 3250 5650
-$Comp
-L power:GNDPWR #PWR0140
-U 1 1 5BC7B6FB
-P 8550 800
-F 0 "#PWR0140" H 8550 600 50  0001 C CNN
-F 1 "GNDPWR" H 8550 670 50  0000 C CNN
-F 2 "" H 8550 750 50  0001 C CNN
-F 3 "" H 8550 750 50  0001 C CNN
-	1    8550 800 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3880 1950 3880 1750
 Wire Wire Line
@@ -3216,4 +2913,306 @@ F 3 "" H 10350 1450 50  0001 C CNN
 $EndComp
 Text Notes 8900 5150 0    40   ~ 0
 Must be close\nto V_ISO_Out
+$Comp
+L Device:C C9
+U 1 1 5BB295C8
+P 4600 4200
+F 0 "C9" H 4690 4240 50  0000 L CNN
+F 1 "CP" H 4690 4160 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L16.5mm_W7.0mm_P15.00mm_MKT" H 4600 4200 50  0001 C CNN
+F 3 "" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5BC42C00
+P 10200 2400
+F 0 "TP6" H 10200 2700 50  0000 C BNN
+F 1 "Car GND" H 10200 2650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10200 2400 50  0001 C CNN
+F 3 "" H 10200 2400 50  0001 C CNN
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5BBEBBC8
+P 10960 2400
+F 0 "TP8" H 10960 2700 50  0000 C BNN
+F 1 "Device GND" H 10960 2650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10960 2400 50  0001 C CNN
+F 3 "" H 10960 2400 50  0001 C CNN
+	1    10960 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0136
+U 1 1 5BC754C8
+P 10960 2400
+F 0 "#PWR0136" H 10960 2200 50  0001 C CNN
+F 1 "GNDREF" H 10960 2270 50  0000 C CNN
+F 2 "" H 10960 2350 50  0001 C CNN
+F 3 "" H 10960 2350 50  0001 C CNN
+	1    10960 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 800  6950 800 
+$Comp
+L power:GNDREF #PWR0137
+U 1 1 5BC77E73
+P 6950 800
+F 0 "#PWR0137" H 6950 550 50  0001 C CNN
+F 1 "GNDREF" H 6950 650 50  0000 C CNN
+F 2 "" H 6950 800 50  0001 C CNN
+F 3 "" H 6950 800 50  0001 C CNN
+	1    6950 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5FEDFCAF
+P 8550 800
+F 0 "#PWR0101" H 8550 550 50  0001 C CNN
+F 1 "GNDREF" H 8550 650 50  0000 C CNN
+F 2 "" H 8550 800 50  0001 C CNN
+F 3 "" H 8550 800 50  0001 C CNN
+	1    8550 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5FF17B7B
+P 8550 1200
+F 0 "#PWR0102" H 8550 950 50  0001 C CNN
+F 1 "GNDREF" H 8550 1050 50  0000 C CNN
+F 2 "" H 8550 1200 50  0001 C CNN
+F 3 "" H 8550 1200 50  0001 C CNN
+	1    8550 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0108
+U 1 1 5FF4C001
+P 8550 1600
+F 0 "#PWR0108" H 8550 1350 50  0001 C CNN
+F 1 "GNDREF" H 8550 1450 50  0000 C CNN
+F 2 "" H 8550 1600 50  0001 C CNN
+F 3 "" H 8550 1600 50  0001 C CNN
+	1    8550 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0109
+U 1 1 5FF7ED9D
+P 8550 2000
+F 0 "#PWR0109" H 8550 1750 50  0001 C CNN
+F 1 "GNDREF" H 8550 1850 50  0000 C CNN
+F 2 "" H 8550 2000 50  0001 C CNN
+F 3 "" H 8550 2000 50  0001 C CNN
+	1    8550 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0110
+U 1 1 5FFB2638
+P 8550 2400
+F 0 "#PWR0110" H 8550 2150 50  0001 C CNN
+F 1 "GNDREF" H 8550 2250 50  0000 C CNN
+F 2 "" H 8550 2400 50  0001 C CNN
+F 3 "" H 8550 2400 50  0001 C CNN
+	1    8550 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0111
+U 1 1 5FFEBCDF
+P 9200 1400
+F 0 "#PWR0111" H 9200 1150 50  0001 C CNN
+F 1 "GNDREF" H 9200 1250 50  0000 C CNN
+F 2 "" H 9200 1400 50  0001 C CNN
+F 3 "" H 9200 1400 50  0001 C CNN
+	1    9200 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR0112
+U 1 1 60024BED
+P 3100 950
+F 0 "#PWR0112" H 3100 700 50  0001 C CNN
+F 1 "GNDREF" H 3100 800 50  0000 C CNN
+F 2 "" H 3100 950 50  0001 C CNN
+F 3 "" H 3100 950 50  0001 C CNN
+	1    3100 950 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3100 950 
+$Comp
+L power:GNDREF #PWR0113
+U 1 1 600637E1
+P 4100 2350
+F 0 "#PWR0113" H 4100 2100 50  0001 C CNN
+F 1 "GNDREF" H 4100 2200 50  0000 C CNN
+F 2 "" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0114
+U 1 1 600A41EF
+P 5150 2350
+F 0 "#PWR0114" H 5150 2100 50  0001 C CNN
+F 1 "GNDREF" H 5150 2200 50  0000 C CNN
+F 2 "" H 5150 2350 50  0001 C CNN
+F 3 "" H 5150 2350 50  0001 C CNN
+	1    5150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0115
+U 1 1 600DDD93
+P 3800 4600
+F 0 "#PWR0115" H 3800 4350 50  0001 C CNN
+F 1 "GNDREF" H 3800 4450 50  0000 C CNN
+F 2 "" H 3800 4600 50  0001 C CNN
+F 3 "" H 3800 4600 50  0001 C CNN
+	1    3800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0120
+U 1 1 6012D482
+P 8300 4550
+F 0 "#PWR0120" H 8300 4300 50  0001 C CNN
+F 1 "GNDREF" H 8300 4400 50  0000 C CNN
+F 2 "" H 8300 4550 50  0001 C CNN
+F 3 "" H 8300 4550 50  0001 C CNN
+	1    8300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0124
+U 1 1 6016F656
+P 10150 4300
+F 0 "#PWR0124" H 10150 4050 50  0001 C CNN
+F 1 "GNDREF" H 10150 4150 50  0000 C CNN
+F 2 "" H 10150 4300 50  0001 C CNN
+F 3 "" H 10150 4300 50  0001 C CNN
+	1    10150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0129
+U 1 1 601A66BB
+P 10750 4550
+F 0 "#PWR0129" H 10750 4300 50  0001 C CNN
+F 1 "GNDREF" H 10750 4400 50  0000 C CNN
+F 2 "" H 10750 4550 50  0001 C CNN
+F 3 "" H 10750 4550 50  0001 C CNN
+	1    10750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0130
+U 1 1 601D999D
+P 7700 3800
+F 0 "#PWR0130" H 7700 3550 50  0001 C CNN
+F 1 "GNDREF" H 7700 3650 50  0000 C CNN
+F 2 "" H 7700 3800 50  0001 C CNN
+F 3 "" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR0139
+U 1 1 602130AE
+P 6050 5850
+F 0 "#PWR0139" H 6050 5600 50  0001 C CNN
+F 1 "GNDREF" H 6050 5700 50  0000 C CNN
+F 2 "" H 6050 5850 50  0001 C CNN
+F 3 "" H 6050 5850 50  0001 C CNN
+	1    6050 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 5850
+$Comp
+L power:GNDREF #PWR0140
+U 1 1 60248920
+P 3700 6050
+F 0 "#PWR0140" H 3700 5800 50  0001 C CNN
+F 1 "GNDREF" H 3700 5900 50  0000 C CNN
+F 2 "" H 3700 6050 50  0001 C CNN
+F 3 "" H 3700 6050 50  0001 C CNN
+	1    3700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0141
+U 1 1 6027DDA0
+P 750 6400
+F 0 "#PWR0141" H 750 6150 50  0001 C CNN
+F 1 "GNDREF" H 750 6250 50  0000 C CNN
+F 2 "" H 750 6400 50  0001 C CNN
+F 3 "" H 750 6400 50  0001 C CNN
+	1    750  6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0142
+U 1 1 602B00C1
+P 2850 6400
+F 0 "#PWR0142" H 2850 6150 50  0001 C CNN
+F 1 "GNDREF" H 2850 6250 50  0000 C CNN
+F 2 "" H 2850 6400 50  0001 C CNN
+F 3 "" H 2850 6400 50  0001 C CNN
+	1    2850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0143
+U 1 1 602E15CF
+P 1650 6050
+F 0 "#PWR0143" H 1650 5800 50  0001 C CNN
+F 1 "GNDREF" H 1650 5900 50  0000 C CNN
+F 2 "" H 1650 6050 50  0001 C CNN
+F 3 "" H 1650 6050 50  0001 C CNN
+	1    1650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0145
+U 1 1 60320895
+P 850 850
+F 0 "#PWR0145" H 850 600 50  0001 C CNN
+F 1 "GNDREF" H 850 700 50  0000 C CNN
+F 2 "" H 850 850 50  0001 C CNN
+F 3 "" H 850 850 50  0001 C CNN
+	1    850  850 
+	0    1    1    0   
+$EndComp
+Connection ~ 850  850 
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5FDE0FE2
+P 8800 3650
+F 0 "#PWR?" H 8800 3400 50  0001 C CNN
+F 1 "GNDREF" H 8800 3500 50  0000 C CNN
+F 2 "" H 8800 3650 50  0001 C CNN
+F 3 "" H 8800 3650 50  0001 C CNN
+	1    8800 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5FE1343B
+P 11250 3650
+F 0 "#PWR?" H 11250 3400 50  0001 C CNN
+F 1 "GNDREF" H 11250 3500 50  0000 C CNN
+F 2 "" H 11250 3650 50  0001 C CNN
+F 3 "" H 11250 3650 50  0001 C CNN
+	1    11250 3650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
