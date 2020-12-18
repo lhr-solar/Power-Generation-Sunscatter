@@ -84,7 +84,14 @@ The parts list is currently on **Version 1.1.0**.
 This is a list of changes we can make to the board in future versions to improve
 it in various ways. Some of these are functional, others are purely aesthetic.
 
-1. **Isolate Nucleo From High-Power Domain**
+1. **Reduce Layout Ground Bounce**
+
+   Something of consideration for the layout of the MPPT board is the effect of
+   [ground bounce](https://www.analog.com/en/analog-dialogue/articles/reducing-ground-bounce-in-dc-to-dc-converters.html)
+   on board EMI and signal noise. The existing PCB traces for the DC-DC
+   converter could be further optimized to reduce ground bounce.
+
+2. **Isolate Nucleo From High-Power Domain**
 
    Currently, the Nucleo operates in the same power domain (that is, the same
    ground and without isolation) as the high power components of the board -
@@ -103,7 +110,7 @@ it in various ways. Some of these are functional, others are purely aesthetic.
 
    These are the next couple of numbered points.
 
-2. **Upgrading the voltage sensors**
+3. **Upgrading the voltage sensors**
 
    To upgrade the voltage sensors, we would want to use an isolating amplifier
    such as the AMC1211. This chip has an input range of 0-2V, so we would need
@@ -114,11 +121,11 @@ it in various ways. Some of these are functional, others are purely aesthetic.
    rather than single-sided. (Explain how to convert this. example in
    datasheet. Idea: difference amplifier like INA132?)
 
-3. **Upgrading the current sensors**
+4. **Upgrading the current sensors**
 
    TODO: (just like voltage sensors, but with current-sense isolating amplifiers)
 
-4. **Upgrading the MOSFET driver**
+5. **Upgrading the MOSFET driver**
 
    This is a fairly easy upgrade, since our current chip already looks a lot
    like an isolated FET driver.
@@ -137,7 +144,7 @@ it in various ways. Some of these are functional, others are purely aesthetic.
    We only need one channel, but the only chips TI offers with one-channel
    isolation are far more complicated to use.
 
-5. **Make Battery/Array Connectors Vertical, Not Right-Angle**
+6. **Make Battery/Array Connectors Vertical, Not Right-Angle**
 
    This is a fairly simple improvement, but it would allow for further
    compaction of the board by letting us, for example, place low-power systems
