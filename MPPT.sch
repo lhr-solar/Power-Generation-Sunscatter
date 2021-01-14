@@ -2609,10 +2609,6 @@ Wire Wire Line
 Connection ~ 4250 6300
 Wire Wire Line
 	3250 6300 4250 6300
-Wire Wire Line
-	3450 5650 3250 5650
-Wire Wire Line
-	3250 5650 3250 5950
 NoConn ~ 3850 6050
 $Comp
 L power:+3.3V #PWR0144
@@ -2654,28 +2650,6 @@ Wire Wire Line
 	2850 6300 3250 6300
 Wire Wire Line
 	4250 6300 4250 6200
-$Comp
-L Device:R R23
-U 1 1 5BCAF842
-P 3050 5650
-F 0 "R23" V 3200 5590 50  0000 L CNN
-F 1 "1.7k" V 3130 5570 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3050 5650 50  0001 C CNN
-F 3 "" H 3050 5650 50  0001 C CNN
-	1    3050 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C16
-U 1 1 5BC45DC6
-P 3250 6050
-F 0 "C16" H 3330 6090 50  0000 L CNN
-F 1 "1uF" H 3330 6020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3250 6050 50  0001 C CNN
-F 3 "" H 3250 6050 50  0001 C CNN
-	1    3250 6050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP20
 U 1 1 5BBE93C9
@@ -2886,9 +2860,6 @@ Wire Wire Line
 Connection ~ 2850 5650
 Wire Wire Line
 	2850 5650 2850 5900
-Wire Wire Line
-	3200 5650 3250 5650
-Connection ~ 3250 5650
 Wire Wire Line
 	3880 1950 3880 1750
 Wire Wire Line
@@ -3215,4 +3186,33 @@ F 3 "" H 11250 3650 50  0001 C CNN
 	1    11250 3650
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3200 5650 3250 5650
+Wire Wire Line
+	3450 5650 3250 5650
+Connection ~ 3250 5650
+$Comp
+L Device:C_Small C16
+U 1 1 5BC45DC6
+P 3250 6050
+F 0 "C16" H 3330 6090 50  0000 L CNN
+F 1 "1uF" H 3330 6020 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3250 6050 50  0001 C CNN
+F 3 "" H 3250 6050 50  0001 C CNN
+	1    3250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5BCAF842
+P 3050 5650
+F 0 "R23" V 3200 5590 50  0000 L CNN
+F 1 "1.7k" V 3130 5570 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3050 5650 50  0001 C CNN
+F 3 "" H 3050 5650 50  0001 C CNN
+	1    3050 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 5650 3250 5950
 $EndSCHEMATC

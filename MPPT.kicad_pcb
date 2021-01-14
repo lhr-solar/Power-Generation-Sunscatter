@@ -31,7 +31,7 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
+    (40 Dwgs.User user)
     (41 Cmts.User user hide)
     (42 Eco1.User user)
     (43 Eco2.User user)
@@ -4685,6 +4685,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model :UTSVT:connectors.3dshapes/436500227.stp
+      (offset (xyz 1.5 0 5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module Diode_SMD:D_SOD-123F (layer B.Cu) (tedit 587F7769) (tstamp 5FCA14E8)
@@ -5786,6 +5791,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model :UTSVT:connectors.3dshapes/436500428.stp
+      (offset (xyz 4.5 0 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module Capacitor_SMD:C_0805_2012Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC5ECEE)
@@ -5995,6 +6005,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model :UTSVT:connectors.3dshapes/436500428.stp
+      (offset (xyz 4.5 0 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -6347,6 +6362,11 @@
       (net 18 /-Batt))
     (pad 1 thru_hole circle (at 0 0) (size 2.286 2.286) (drill 1.3208) (layers *.Cu *.Mask)
       (net 46 "Net-(F2-Pad1)"))
+    (model :UTSVT:connectors.3dshapes/pxc_1720796_04_PC-5-2-GF-7-62_3D.stp
+      (offset (xyz -117.5 -54.5 -22.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module MPPT-PrimaryPCB:PhoenixContact_PowerCombicon5_GF_2x7.62mm (layer F.Cu) (tedit 5C0834F8) (tstamp 5FC6387E)
@@ -6380,6 +6400,11 @@
       (net 17 /-Arr))
     (pad 1 thru_hole circle (at 0 0) (size 2.286 2.286) (drill 1.3208) (layers *.Cu *.Mask)
       (net 16 "Net-(F1-Pad1)"))
+    (model :UTSVT:connectors.3dshapes/pxc_1720796_04_PC-5-2-GF-7-62_3D.stp
+      (offset (xyz -117.5 -54.5 -22.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module MPPT-PrimaryPCB:MODULE_NUCLEO-L432KC (layer F.Cu) (tedit 5FC374BD) (tstamp 5FC5F60E)
