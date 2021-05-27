@@ -155,6 +155,14 @@ it in various ways. Some of these are functional, others are purely aesthetic.
    The appropriate part numbers for this would be 1720916 (3-pin) and 1720903
    (2-pin).
 
+7. **Reduce Trace Widths and Copper Thickness**
+
+   It was discovered on 05/26/21 between Burak Biyikli and Matthew Yu that the
+   expected trace width for 8 A was 5.42 mm for 1 oz/ft^2 on external traces.
+   This should be investigated during MPPT testing in the summer, but a promising
+   cost and weight savings would be to reduce trace width from 8 mm to 5.5 mm and
+   reduce the weight requirement to 1 oz/ft^2.
+
 ---
 
 ## Ordering Instructions
