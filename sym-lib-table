@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name Array)(type Legacy)(uri ${KIPRJMOD}/Array.lib)(options "")(descr ""))
+  (lib (name Array)(type Legacy)(uri ${KIPRJMOD}/Array.kicad_sym)(options "")(descr ""))
+  (lib (name MAX40075AUT+)(type Legacy)(uri C:/Users/matth/Documents/Github/Smartwatch/Smartwatch/Symbols/MAX40075AUT+.lib)(options "")(descr "")(disabled))
+  (lib (name 1720819)(type Legacy)(uri C:/Users/matth/Downloads/LIB_1720819/1720819/KiCad/1720819.kicad_sym)(options "")(descr ""))
+  (lib (name MPPT-rescue)(type Legacy)(uri ${KIPRJMOD}/MPPT-rescue.lib)(options "")(descr ""))
 )
