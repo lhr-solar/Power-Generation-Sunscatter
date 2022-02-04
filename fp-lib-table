@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name "MPPT_Custom")(type "KiCad")(uri "${KIPRJMOD}/MPPT-PrimaryPCB.pretty")(options "")(descr "Footprints for MPPT-specific components."))
-  (lib (name "UTSVT-KiCadLibraries")(type "KiCad")(uri "/home/matthew/KiCAD-workspace/UTSVT-KiCadLibraries")(options "")(descr ""))
-)

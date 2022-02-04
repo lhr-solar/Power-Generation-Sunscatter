@@ -46,7 +46,7 @@ We also follow the mutually inclusive versioning procedure agreed upon in this
 
 ### Versioning
 
-The board schematic is currently on **Version 3.2.0**.
+The board schematic is currently on **Version 3.3.0**.
 
 The board layout is currently on **Version 1.3.0**.
 
