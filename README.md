@@ -1,4 +1,4 @@
-# Maximum Power Point Tracker Board
+# Maximum Power Point Tracker Board (Sunspot)
 
 This repository contains the following files for the MPPT HW:
 
@@ -46,26 +46,25 @@ The board layout is currently on **Version 1.4.0**.
 
 The parts list is currently on **Version 1.2.0**.
 
-### Errata
+### Changes and Errata
 #### Schematic
-
 - **Pre Rev 3.2.0**:
   - See the F2018 EE464 MPPT Final Report for list of errata and fixes.
   - 0.22 uF (C21) and 10 uF (C22) capacitors in the CAN circuit were swapped.
     Fixed in **Rev 3.2.0**.
 - **Rev 3.2.0**:
-  - None as of 12/6/2020.
+  - TODO: this
 - **Rev 3.3.0**:
-  - Yet to be assembled.
+  - TODO: this
 
 #### Layout
 
 - **Pre Rev 1.3.0**:
   - See the F2018 EE464 MPPT Final Report for list of errata and fixes.
 - **Rev 1.3.0**:
-  - None as of 12/6/2020.
+  - TODO: this
 - **Rev 1.4.0**:
-  - Yet to be assembled.
+  - TODO: this
 
 #### Parts List
 
@@ -75,10 +74,11 @@ The parts list is currently on **Version 1.2.0**.
   - Populated and ready for ordering (sans snubber caps and resistors).
 - **Rev 1.2.0**:
   - Moved parts list into the KiCAD project.
+  - TODO: this
 
 ---
 
-### Suggested Improvements
+## Suggested Improvements
 
 This is a list of changes we can make to the board in future versions to improve
 it in various ways. Some of these are functional, others are purely aesthetic.
@@ -203,7 +203,7 @@ settings are correct before you order.
 
 ## Assembly and Testing
 
-> These instructions may be outdated for layout revision 3.3.0.
+> These instructions are outdated for layout revision 3.3.0.
 
 The board should be assembled and tested in sections to ensure proper
 functioning. Assembly should go through the following sections in order:
