@@ -5,13 +5,7 @@ This repository contains the following files for the MPPT HW:
 - Schematic
 - Layout
 - Datasheets
-
-Also a good resource is the
-[MPPT Parts list](https://docs.google.com/spreadsheets/d/1I5RVNwaxF8nP1hDzc5aeY1fo46EIPwsY3FHYhlpXQog/edit?usp=sharing);
-this is the source of truth for the schematic and layout and should be consulted
-and updated by anyone doing revisions on the board. As good practice, make sure
-your updates to the parts list, when finalized, gets a new named version in the
-version history.
+- BoM (embedded into the KiCAD project)
 
 A couple other important sections for engineers who are improving this board are
 below.
@@ -27,8 +21,8 @@ below.
 
 ## Maintainers
 
-The last maintainer of this project was Matthew Yu (Array Lead 2020) as of
-12/6/2020. His email is matthewjkyu@gmail.com.
+The last maintainer of this project was Matthew Yu as of 02/11/2022. His email
+is matthewjkyu@gmail.com. 
 
 Also a useful point of contact is Professor Gary Hallock, who advised Matthew
 and worked with the several former senior design teams and solar car class
@@ -48,50 +42,48 @@ We also follow the mutually inclusive versioning procedure agreed upon in this
 
 The board schematic is currently on **Version 3.3.0**.
 
-The board layout is currently on **Version 1.3.0**.
+The board layout is currently on **Version 1.4.0**.
 
-The parts list is currently on **Version 1.1.0**.
+The parts list is currently on **Version 1.2.0**.
 
-### Schematic
+### Errata
+#### Schematic
 
 - **Pre Rev 3.2.0**:
   - See the F2018 EE464 MPPT Final Report for list of errata and fixes.
   - 0.22 uF (C21) and 10 uF (C22) capacitors in the CAN circuit were swapped.
     Fixed in **Rev 3.2.0**.
 - **Rev 3.2.0**:
-  - None as of 12/6/2020, but then the board hasn't been assembled and tested
-    yet.
+  - None as of 12/6/2020.
+- **Rev 3.3.0**:
+  - Yet to be assembled.
 
-### Layout
+#### Layout
 
 - **Pre Rev 1.3.0**:
   - See the F2018 EE464 MPPT Final Report for list of errata and fixes.
 - **Rev 1.3.0**:
-  - None as of 12/6/2020, but then the board hasn't been assembled and tested
-    yet.
+  - None as of 12/6/2020.
+- **Rev 1.4.0**:
+  - Yet to be assembled.
 
-### Parts List
+#### Parts List
 
 - **Pre Rev 1.1.0**:
   - We don't talk about this. Here be the dark ages.
 - **Rev 1.1.0**:
   - Populated and ready for ordering (sans snubber caps and resistors).
+- **Rev 1.2.0**:
+  - Moved parts list into the KiCAD project.
 
 ---
 
-## Suggested Improvements
+### Suggested Improvements
 
 This is a list of changes we can make to the board in future versions to improve
 it in various ways. Some of these are functional, others are purely aesthetic.
 
-1. **Reduce Layout Ground Bounce**
-
-   Something of consideration for the layout of the MPPT board is the effect of
-   [ground bounce](https://www.analog.com/en/analog-dialogue/articles/reducing-ground-bounce-in-dc-to-dc-converters.html)
-   on board EMI and signal noise. The existing PCB traces for the DC-DC
-   converter could be further optimized to reduce ground bounce.
-
-2. **Isolate Nucleo From High-Power Domain**
+1. **Isolate Nucleo From High-Power Domain**
 
    Currently, the Nucleo operates in the same power domain (that is, the same
    ground and without isolation) as the high power components of the board -
@@ -110,7 +102,7 @@ it in various ways. Some of these are functional, others are purely aesthetic.
 
    These are the next couple of numbered points.
 
-3. **Upgrading the voltage sensors**
+2. **Upgrading the voltage sensors**
 
    To upgrade the voltage sensors, we would want to use an isolating amplifier
    such as the AMC1211. This chip has an input range of 0-2V, so we would need
@@ -121,11 +113,11 @@ it in various ways. Some of these are functional, others are purely aesthetic.
    rather than single-sided. (Explain how to convert this. example in
    datasheet. Idea: difference amplifier like INA132?)
 
-4. **Upgrading the current sensors**
+3. **Upgrading the current sensors**
 
    TODO: (just like voltage sensors, but with current-sense isolating amplifiers)
 
-5. **Upgrading the MOSFET driver**
+4. **Upgrading the MOSFET driver**
 
    This is a fairly easy upgrade, since our current chip already looks a lot
    like an isolated FET driver.
@@ -143,17 +135,6 @@ it in various ways. Some of these are functional, others are purely aesthetic.
 
    We only need one channel, but the only chips TI offers with one-channel
    isolation are far more complicated to use.
-
-6. **Make Battery/Array Connectors Vertical, Not Right-Angle**
-
-   This is a fairly simple improvement, but it would allow for further
-   compaction of the board by letting us, for example, place low-power systems
-   on the other side of the power connectors. It also standardizes the
-   orientation of all of the connectors on the board - the car power and CAN
-   connectors are already vertical.
-
-   The appropriate part numbers for this would be 1720916 (3-pin) and 1720903
-   (2-pin).
 
 ---
 
@@ -221,6 +202,8 @@ settings are correct before you order.
 ---
 
 ## Assembly and Testing
+
+> These instructions may be outdated for layout revision 3.3.0.
 
 The board should be assembled and tested in sections to ensure proper
 functioning. Assembly should go through the following sections in order:
