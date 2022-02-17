@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -62,8 +62,8 @@
       35,
       36
     ],
-    "visible_layers": "ff0ffff_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ff3ffff_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "MPPT.kicad_prl",
@@ -72,15 +72,15 @@
   "project": {
     "files": [
       {
-        "name": "MPPT.kicad_sch",
+        "name": "MPPT.kicad_pcb",
         "open": false,
         "window": {
           "display": 0,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 1874,
-          "size_y": 1096
+          "maximized": false,
+          "pos_x": 922,
+          "pos_y": 0,
+          "size_x": 943,
+          "size_y": 1087
         }
       }
     ]
