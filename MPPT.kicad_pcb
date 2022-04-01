@@ -58,9 +58,9 @@
     (aux_axis_origin 17.505 162.555)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
-      (disableapertmacros false)
-      (usegerberextensions true)
-      (usegerberattributes true)
+      (disableapertmacros true)
+      (usegerberextensions false)
+      (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (svguseinch false)
