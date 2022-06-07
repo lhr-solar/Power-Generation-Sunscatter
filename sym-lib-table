@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "MPPT")(type "KiCad")(uri "${KIPRJMOD}/Symbols/MPPT.kicad_sym")(options "")(descr ""))
-)
