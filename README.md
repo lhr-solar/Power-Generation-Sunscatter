@@ -25,6 +25,12 @@ below.
   - **Symbols**: Schematic symbol files for component.
   - **vX_X_X**: Build files and final output for a given board revision.
     - **jlcpcb**: Gerbers, POS, and BOM files for JLCPCB manufacturing.
+    - bom.csv: CSV file openable in your preferred spreadsheet editor showing
+      components, sourcing, and other relevant BOM data.
+    - ibom.html: HTML page that shows components and placement within the
+      layout.
+    - Layout.pdf: PDF of the PCB layers and traces.
+    - Schematic.pdf: PDF of the PCB schematic.
   - *.kicad_pcb: Layout file.
   - *.kicad_prl: Project local settings file. Ignored in commit by default.
   - *.kicad_pro: Project file.
@@ -32,16 +38,19 @@ below.
   - sym-lib-table: Symbol library table.
 - **Documentation**: Contains documentation for ordering, assembly, and testing
   instructions.
-  - [ASSEMBLY_AND_TESTING.md](Documentation/ASSEMBLY_AND_TESTING.md): Instructions for putting together and testing the PCB.
-  - [IMPROVEMENT.md](Documentation/IMPROVEMENT.md): Suggestions for improving the PCB in future revisions.
-  - [ORDERING.md](Documentation/ORDERING.md): Instructions for ordering the PCB from JLCPCB.
+  - [ASSEMBLY_AND_TESTING.md](Documentation/ASSEMBLY_AND_TESTING.md):
+    Instructions for putting together and testing the PCB.
+  - [IMPROVEMENT.md](Documentation/IMPROVEMENT.md): Suggestions for improving
+    the PCB in future revisions.
+  - [ORDERING.md](Documentation/ORDERING.md): Instructions for ordering the PCB
+    from JLCPCB.
 
 ---
 
 ## Maintainers
 
-The current maintainer of this project is Matthew Yu as of 06/05/2022. His email
-is matthewjkyu@gmail.com. 
+The current maintainer of this project is Matthew Yu as of 07/15/2022. His email
+is matthewjkyu@gmail.com.
 
 Also a useful point of contact is Professor Gary Hallock, who advised Matthew
 and worked with the several former senior design teams and solar car class
@@ -53,7 +62,7 @@ groups who developed this board.
 
 This PCB is on unified version `3.4.0`. Every time the schematic and/or layout
 is updated, this version number should go up. We use [semantic
-versioning](https://semver.org/) to denote between versions.  
+versioning](https://semver.org/) to denote between versions.
 
 ---
 
@@ -115,7 +124,7 @@ versioning](https://semver.org/) to denote between versions.
 - This repo is now a subrepo in the Power-Generation monorepo.
 #### Schematic
 - Schematic has been broken into hierarchical sheets and all components are
-  reenumerated for future extensibility.
+  re-enumerated for future extensibility.
 - Snubber values are finalized.
 #### Layout
 - Layout silkscreen is updated.
@@ -124,6 +133,5 @@ versioning](https://semver.org/) to denote between versions.
 
 ## TODO
 
-- Update [ASSEMBLY_AND_TESTING.md](Documentation/ASSEMBLY_AND_TESTING.md) for v3.4.0.
 - Finalize snubber values for v3.3.1. Go back to v3.3.0 and v3.3.1 branches and
   extract build files and final output documents to put here.

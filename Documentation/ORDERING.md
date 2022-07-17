@@ -1,6 +1,6 @@
 # HOW TO ORDER THIS PCB
 
-This guide is on revision `v1.1.0`.
+v1.1.0
 
 Ordering the board will vary from distributor to distributor; some will take the
 KiCAD project directly, others require Gerber files. If they require gerber

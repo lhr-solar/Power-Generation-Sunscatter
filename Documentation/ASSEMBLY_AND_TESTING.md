@@ -4,7 +4,7 @@ v1.1.0
 
 ## Assembly and Testing Instructions
 
-> These instructions are outdated for layout revision 3.3.0.
+### v3.2.0
 
 The board should be assembled and tested in sections to ensure proper
 functioning. Assembly should go through the following sections in order:
@@ -16,7 +16,7 @@ functioning. Assembly should go through the following sections in order:
 5. CAN
 6. DC/DC Converter
 
-### Step by Step Instructions
+#### Step by Step Instructions
 
 It's highly recommended to pull up the schematic and layout side by side while
 assembling and testing the board. As a tip, you can click on the schematic
@@ -189,7 +189,197 @@ layout, please file a PR or issue so it can be fixed!
       chance that some assembly you did later on broke/removed/damaged previous
       parts.
 
-You now have a completed MPPT (I hope) and I wish you luck in your future solar
-car endeavors!
+### v3.3.x, v3.4.0
 
-This assembly guide was last modified *12/13/2020* by **Matthew Yu**.
+> v3.3.x should be compatible with these instructions, although component
+> numbering will be different.
+
+The board should be assembled and tested in sections to ensure proper
+functioning. Assembly should go through the following sections in order:
+
+1. Pre Board Checks
+2. Power Regulation
+3. MCU
+4. LEDs
+5. CAN Driver
+6. Gate Driver
+7. Sensors
+8. DC/DC Converter
+9. Post Board Check
+
+#### Step by Step Instructions
+
+It's highly recommended to pull up the schematic and layout side by side while
+assembling and testing the board. As a tip, you can click on the schematic
+symbol, and if the layout window is open, it'll jump to that part on the layout.
+Also hide everything except the Silkscreen or Fabrication layer (of the right
+side of the PCB) to remove any clutter from the layout. You can also use the
+provided `ibom.html` (open it in your browser!) for placing components. This is
+useful for tracking assembly.
+
+Ideally, JLCPCB or the PCB manufacturer will have assembled most of the board,
+if not just the passives. For the components that are already on the board, you
+do not need to solder them on, but make sure to test them!
+
+Also, if you find any discrepancies between these instructions and the board
+layout, please file a PR or issue so it can be fixed!
+
+##### Soldering Order
+1. The recommended order for soldering components are:
+
+    1. Soldering the smallest components.
+    2. Solder from the center outwards.
+    3. Soldering the back side components.
+    4. Soldering the SMD components.
+    5. Soldering the through hole components.
+
+    An example of this priority system is soldering on the LEDs (LED201,
+    LED202) and the SMD converter (U202) prior to the Molex connector (J201)
+    and the fuse box (F201).
+
+##### Testing Instructions
+1. Pre Board Checks
+
+    Before installing anything, check for power shorts where there shouldn't be.
+    This list is not exhaustive, and only consist of either power lines or high
+    energy signals that cannot be current limited by the source.
+    - Power Regulation
+        - __F201 Fuse:__ +12V (J201 Pin1) and +12V (TP201)
+        - __12V Car Power Line:__ 12V (TP201) and Car GND (TP202)
+        - __+5V Board Power Line:__ +5V (TP204) and Board GND (TP203)
+        - __9VA Board Power Line:__ 9VA (TP205) and Board GND (TP203)
+        - __12V to +5V Transition:__ 12V (TP201) and +5V (TP204)
+        - __+5V to 9VA Transition:__ +5V (TP204) and 9VA (TP205)
+        - __Car to Board Isolation:__ Car GND (TP202) and Board GND (TP203)
+        - __+3V3 Board Power Line:__ +3V3 (TP101) and Board GND (TP203)
+    - DC/DC Converter
+        - __F401 Fuse:__ Solar Array+ (J401 Pin1) and +ARR (TP507)
+        - __F402 Fuse:__ Battery+ (J402 Pin1) and +BATT (TP509)
+        - __+ARR Power Line:__ +ARR (TP507) and -ARR (TP502)
+        - __+BATT Power Line:__ +BATT (TP509) and -BATT (TP505)
+        - __Drive PWM Isolation:__ GATE (TP401) and Board GND (TP203)
+        - __Snubber Isolation:__ +SNUB (TP402) and -SNUB (TP404)
+
+        Note that -SNUB (TP404), GND (TP203, TP302, TP501, TP505) are functionally equivalent.
+
+2. Power Regulation
+
+    Following the soldering order, solder on the components specified in the
+    power_regulation schematic page (ID: 2/7).
+
+    To test this circuit, after soldering, insert an 8A fuse into the fuse
+    holder (F201) and plug into the molex connector (J201) a 10.8 - 13.2 VDC
+    source.
+
+    Using a multimeter, measure across 12V (TP201) and Car GND (TP202). This
+    should be the value of your input. The output of U201 at +5V (TP204) and
+    Board GND (TP203) should be 5V. The output of U202 at 9VA (TP205) and Board
+    GND (TP203) should be 9V.
+
+    Additionally, the LEDs (LED201, LED202) should both be on and green.
+
+3. MCU
+
+    Following the soldering order, solder on the components specified in the
+    root schematic page (ID: 1/7). The Nucleo should be plugged into standard
+    2.54mm headers that are soldered into the U101 footprint so they can be
+    replaced if necessary.
+
+    To test this circuit, after soldering, plug in the molex connector (J101) a
+    7 - 12 VDC source.
+
+    Using a multimeter, measure across +9V (TP102) and Board GND (TP203). This
+    should be the value of your input. The output of U101 at +3V3 should be
+    3.3V.
+
+    Additionally, the onboard LED of the Nucleo should turn on when powered.
+
+    Additionally, the reset switch (SW101) should turn off the onboard LED when
+    held down. This should happen when the Nucleo is powered through the 9V
+    supply (J101) or when Car Power is applied (J201).
+
+4. LEDs
+
+    Following the soldering order, solder on the components specified in the
+    leds schematic page (ID: 7/7).
+
+    Apply voltage across the circuits (input and GND). The LEDs should turn on
+    if the polarity is correct.
+
+    Additionally, run the indicator_test from the Power-Generation/Sunscatter
+    fw. The LEDs should turn on and off in a round-robin order.
+
+5. CAN Driver
+
+    Following the soldering order, solder on the components specified in the
+    can_driver schematic page (ID: 6/7).
+
+    Run the can_test from the Power-Generation/Sunscatter fw with another CAN
+    capable (and working!) board. One board should be specified as
+    `__USER_ONE__` and the other should not be. This test should pass a message
+    between the two boards every second and should be visible on a serial
+    terminal (115200 baud).
+
+6. Gate Driver
+
+    Following the soldering order, solder on the components specified in the
+    gate_driver schematic page (ID: 3/7). 
+
+    +3V3 using a F-M jumper can be routed from a powered Nucleo to the PWM pin
+    (TP301). Based on the driver populated (UCC37322, noninverting), (UC37321,
+    inverting), the output should be ~8.5-9V based on the input state (0, 3.3V).
+    This can be measured from the Gate testpoint (TP401) and -SNUB (TP404).
+
+7. Sensors
+
+    Following the soldering order, solder on the components specified in the
+    sensor schematic page (ID: 5/7).
+
+    To test but not calibrate these sensors (a whole another topic, see the
+    Power-Generation/Sunscatter/test_data/sunscatter_characterization/sunscatter_characterization.xlsx
+    spreadsheet for more details), power the board (+9VA LED should light up).
+
+    Using a power supply, apply some amount of voltage across the voltage
+    sensors with the +ARR or +BATT connectors. Use a multimeter to measure the
+    op amp output at TP508, TP510. This should match the given voltage divider
+    ratio output.
+
+    You can also attempt shorting the +BATT side with the DC/DC converter once
+    it is populated and have the GATE open. The current should flow through both
+    current sensors (make sure you're current limited to less than 6A! The board
+    is theoretically rated up to 8A).
+
+8. DC/DC Converter
+
+    Following the soldering order, solder on the components specified in the
+    boost_converter schematic page (ID: 4/7). Apply thermal paste to the
+    components that will be attached to the heatsinks, screw them into the
+    heatsinks, _and then_ insert them into the board for soldering.
+
+    To test but not calibrate the converter (a whole another topic, see
+    Power-Generation/Sunscatter/test_data/dc_dc_converter_characterization/ for
+    more details), power the board (+9VA LED should light up).
+
+    Stick an oscilloscope probe across the snubber (TP402, TP404) and on the
+    output (TP509, TP404). Input a fixed power source (perhaps 10V, 1A) at the
+    solar array connector and attach a signal generator to the GATE (TP401,
+    TP404). Observe the voltage output and the snubber/output waveforms as the
+    signal generator waveform (recommend square wave) frequency increases.
+
+9. Post Board Check
+
+    1. Check the board for obvious soldering defections like burnt traces
+       or exposed component legs. Make sure those still work. Remove any solder
+       bridges and use q-tips dipped in isopropyl alcohol or flux remover to
+       clean away any flux used during assembly.
+    2. Make sure that there are no parts remaining that have not been assembled
+       (excluding spares). The ibom.html mentioned earlier can be helpful for
+       this.
+    3. The parts list embedded into the KiCAD project, the ibom.html, and any
+       boms generated are the source of truth for the PCB. If there are any
+       inconsistencies between the three or with your assembly, make sure you
+       correct the inconsistency or file an issue so it can be fixed.
+    4. Feel free to fall back on running the tests described here to do sanity
+       tests when the PCB stops working or exhibits undefined behavior. Assembly
+       and/or usage may break or damage the circuit, even if you think you were
+       careful with it.

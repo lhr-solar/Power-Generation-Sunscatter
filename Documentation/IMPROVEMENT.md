@@ -1,4 +1,6 @@
-# IMPROVEMENTS FOR SUNSCATTER
+# IMPROVEMENTS FOR SUNSCATTER HW
+
+v1.0.0
 
 This is a list of changes we can make to the board in future versions to improve
 it in various ways. Some of these are functional, others are purely aesthetic.
@@ -80,4 +82,10 @@ it in various ways. Some of these are functional, others are purely aesthetic.
     Currently we use the nucleo breakout board. Other LHR Solar boards solder
     the STM32L432KC chip directly to the PCB. This reduces space and removes
     extra peripherals that are not used. Requires extra hardware for STLINK
-    communication and flashing. 
+    communication and flashing.
+
+8. **Reset switch Pullup**
+
+    Powering the Nucleo through 5V (using Car Power 12V instead of the 9V supply
+    for testing) needs a pullup resistor on the reset switch (SW101). Behavior
+    is finnicky and the Nucleo onboard pullup is insufficient.
