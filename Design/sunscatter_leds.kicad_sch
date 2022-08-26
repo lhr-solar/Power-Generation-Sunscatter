@@ -252,7 +252,7 @@
     (uuid ff586d43-dcae-4660-ae09-ecc4c3693cf2)
   )
 
-  (text "Status LEDs for at-a-glance information" (at 26.67 36.83 0)
+  (text "Status LEDs for at-a-glance information" (at 25.4 36.83 0)
     (effects (font (size 1 1)) (justify left bottom))
     (uuid 669b3224-e935-43fd-b238-b4e390bf71e0)
   )
