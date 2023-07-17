@@ -22,12 +22,13 @@
   - **Models** - 3d .step files for the PCB 3d viewer.
   - **Symbols** - project specific symbol files for the Sunscatter.
   - **vX_Y_Z** - frozen versioning folder for PCB production files.
+  - design files
 
 ---
 
 ## Maintainers
 
-The current maintainer of this project is Matthew Yu as of 05/20/2023. His email
+The current maintainer of this project is Matthew Yu as of 07/16/2023. His email
 is [matthewjkyu@gmail.com](matthewjkyu@gmail.com).
 
 Contributors to the HW and FW encompass many dedicated students, including:
