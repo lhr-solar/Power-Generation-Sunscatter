@@ -2,8 +2,8 @@
  * @file main.cpp
  * @author Matthew Yu (matthewjkyu@gmail.com) and Roy Mor (roymor.102@gmail.com)
  * @brief Test main that tests the CAN hardware on the v3.3.0 MPPTs.
- * @version 1.1.0
- * @date 2022-06-04
+ * @version 1.2.0
+ * @date 2023-11-18
  * @copyright Copyright (c) 2022
  * @note Leave _LOOPBACK__ commented in to do loopback mode. Leave __USER_ONE__
  * commented in to transmit can_id = 0x0. Comment __USER_ONE__ out to transmit
